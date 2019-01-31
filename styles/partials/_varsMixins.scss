@@ -1,0 +1,47 @@
+$primaryBg: #f0efed;
+$secondaryBg: white;
+$primaryAccent: #f8e71c;
+$secondaryAccent: #0e902d;
+$forestGreen: #074115;
+$black: #2c2c2c;
+$transitiondetail: .2s ease-in-out;
+
+$primaryFont: 'Josefin Sans', sans-serif;
+$primaryLineHeight: 32px;
+
+
+@mixin fontSize($sizeValue){
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue/20) * 1rem;
+}
+
+ @mixin position($type, $top, $right, $bottom, $left) { 
+  position: $type; 
+  top: $top; 
+  right: $right; 
+  bottom: $bottom; 
+  left: $left; 
+}
+
+// @mixin fontSize($sizeValue){
+//   font-size: $sizeValue * 1px;
+//   font-size: ($sizeValue/10) * 1rem;
+// }
+// h1{
+//   @include fontSize(48);
+// }
+// Compiles to
+// h1{
+//   font-size: 48px;
+//   font-size: 4.8rem;
+// // }
+// @mixin position($type, $top, $right, $bottom, $left) { 
+//   position: $type; 
+//   top: $top; 
+//   right: $right; 
+//   bottom: $bottom; 
+//   left: $left; 
+// }
+// .box { 
+// 	@include position(absolute, 10px, 10px, 5px 10px); 
+// }

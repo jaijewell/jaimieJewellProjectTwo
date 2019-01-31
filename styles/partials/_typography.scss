@@ -1,0 +1,28 @@
+body {
+    font-family: $primaryFont
+}
+
+h1 {
+	@include fontsize(166)
+}
+
+h2 {
+    @include fontsize(80)
+}
+
+
+
+
+
+// body text
+p {
+    font-family: $primaryfont;
+    @include fontSize(20);
+}
+
+
+li {
+	font-family: $opensans;
+}
+
+
