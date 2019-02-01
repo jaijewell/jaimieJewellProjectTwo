@@ -1,5 +1,5 @@
 @import 'partials/setup';
-@import 'partials/variables';
+@import 'partials/varsMixins';
 @import 'partials/typography';
 @import 'partials/global';
 @import 'partials/homeHeader';
@@ -7,7 +7,7 @@
 @import 'partials/homeArticles';
 @import 'partials/homeConnect';
 @import 'partials/homeFounder';
-@import 'partials/homeFooter';
+@import 'partials/footer';
 
 
 @import 'partials/blogHeader';
