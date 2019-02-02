@@ -42,8 +42,20 @@ header {
         }
 
     }
-    
 }
+    
+@media(max-width: 930px) {
+    header {
+        .logo {
+            flex: 0 0 100%;
+            
+        } 
+        .topBar {
+            ul {
+                display: none;
+            }
+        }
 
-
+    }
+}
 

@@ -9,16 +9,19 @@ a {
 
 li {
     list-style-type: none;
-    color: $secondary;
+    color: $secondaryColour;
     @include fontSize(20);
 }
 
 .topBar,
     a {
-        color:$secondary;
+        color:$secondaryColour;
     }
 
 button,
 input[type="submit"] {
-    color: $secondary;
+    color: $secondaryColour;
+    background-color: $secondaryAccent;
+    border: none;
+    text-transform: capitalize;
 }

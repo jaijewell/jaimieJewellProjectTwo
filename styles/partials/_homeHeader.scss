@@ -1,5 +1,5 @@
 header {
-    background: linear-gradient( rgba(0, 0, 0, 0.3),),url('../assets/homeHeader.jpg') no-repeat;
+    background: url('../assets/homeHeader.jpg') no-repeat;
     height: 100vh;
     background-size: cover;
     position: relative;
@@ -12,9 +12,8 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        letter-spacing: $primaryLetterSpacing;
         // border: 2px solid green;
-
-        
         
         h1 {
             margin: 0;
@@ -32,14 +31,45 @@ header {
     
   
     .headerImageContainer {
-        background: linear-gradient( rgba(0, 0, 0, 0.3),), url('../assets/homeHeaderBox.jpg') no-repeat;
+        background: url('../assets/homeHeaderBox.jpg') no-repeat;
         background-size: cover;
-        height: 80vh;
-        width: 50vw;
+        height: 85%;
+        width: 45%;
         z-index: 10;
         position: absolute;
-        top:30%;
+        top: 25%;
         right: 0;
+    }
+}
+@media(max-width: 930px) {
+    header {
+        // .headerImageContainer {
+        //     height: 75%;
+        // }
+    }   
+}
+@media(max-width: 580px) {
+    header {
+        .homeTitle h1 {
+            @include fontSize(125)
+        }
     }
 
 }
+
+@media(max-width: 430px) {
+    header {
+        height: 60vh;
+        
+        .logo h2{
+             @include fontSize(28)
+        }
+        .homeTitle {
+            padding: 0 2%;
+        }
+        .homeTitle h1 {
+            @include fontSize(80)
+        }
+    }
+}
+

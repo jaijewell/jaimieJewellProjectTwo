@@ -168,6 +168,7 @@ h3 {
 
 p {
   font-family: "Roboto", sans-serif;
+  line-height: 32px;
   font-size: 20px;
   font-size: 1rem; }
 
@@ -203,13 +204,13 @@ a {
 
 button,
 input[type="submit"] {
-  color: white; }
+  color: white;
+  background-color: #0e902d;
+  border: none;
+  text-transform: capitalize; }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../assets/homeHeader.jpg") no-repeat;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeader.jpg") no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeader.jpg") no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeader.jpg") no-repeat;
+  background: url("../assets/homeHeader.jpg") no-repeat;
   height: 100vh;
   background-size: cover;
   position: relative;
@@ -231,7 +232,8 @@ header {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    letter-spacing: 1.3px; }
     header .homeTitle h1 {
       margin: 0;
       font-weight: 400; }
@@ -239,17 +241,31 @@ header {
       display: block;
       text-transform: lowercase; }
   header .headerImageContainer {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../assets/homeHeaderBox.jpg") no-repeat;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeaderBox.jpg") no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeaderBox.jpg") no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeaderBox.jpg") no-repeat;
+    background: url("../assets/homeHeaderBox.jpg") no-repeat;
     background-size: cover;
-    height: 80vh;
-    width: 50vw;
+    height: 85%;
+    width: 45%;
     z-index: 10;
     position: absolute;
-    top: 30%;
+    top: 25%;
     right: 0; }
+
+@media (max-width: 580px) {
+  header .homeTitle h1 {
+    font-size: 125px;
+    font-size: 6.25rem; } }
+
+@media (max-width: 430px) {
+  header {
+    height: 60vh; }
+    header .logo h2 {
+      font-size: 28px;
+      font-size: 1.4rem; }
+    header .homeTitle {
+      padding: 0 2%; }
+    header .homeTitle h1 {
+      font-size: 80px;
+      font-size: 4rem; } }
 
 header .headerWrapper {
   margin: 0;
@@ -288,6 +304,48 @@ header .topBar {
       text-transform: uppercase; }
       header .topBar ul li a:hover {
         color: #f8e71c; }
+
+@media (max-width: 930px) {
+  header .logo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+  header .topBar ul {
+    display: none; } }
+
+.aboutPlanted {
+  background-color: #f0efed;
+  height: 50vh; }
+  .aboutPlanted .aboutText {
+    height: inherit;
+    padding-top: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 75%; }
+    .aboutPlanted .aboutText h2,
+    .aboutPlanted .aboutText p {
+      margin: 0;
+      padding-bottom: 2.5%;
+      text-align: center; }
+
+@media (max-width: 930px) {
+  .aboutPlanted {
+    height: 75vh; } }
+
+@media (max-width: 500px) {
+  .aboutPlanted {
+    height: 90vh; } }
 
 .founderText h3 {
   font-size: 42px;

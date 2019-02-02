@@ -1,0 +1,33 @@
+.aboutPlanted {
+    background-color: $primaryColour;
+    height: 50vh;
+    .aboutText {
+        height: inherit;
+        padding-top: 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+    
+        h2,
+        p {
+            margin: 0;
+            padding-bottom: 2.5%;
+            text-align: center;
+        }
+    }
+   
+}
+
+@media(max-width: 930px) {
+    .aboutPlanted {
+        height: 75vh
+    }   
+}
+
+@media(max-width: 500px) {
+    .aboutPlanted {
+        height: 90vh
+    }   
+}
