@@ -1,0 +1,24 @@
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    color: $secondary;
+    @include fontSize(20);
+}
+
+.topBar,
+    a {
+        color:$secondary;
+    }
+
+button,
+input[type="submit"] {
+    color: $secondary;
+}

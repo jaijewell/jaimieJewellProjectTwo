@@ -10,6 +10,10 @@ h3 {
 
 h1 {
     @include fontSize(166);
+    color: $secondary;
+    span {
+        color: $primaryAccent;
+    }
 }
 
 h2 {
@@ -38,5 +42,6 @@ input[type="submit"] {
     @include fontSize(20);
     line-height: $primaryLineHeight;
 }
+
 
 

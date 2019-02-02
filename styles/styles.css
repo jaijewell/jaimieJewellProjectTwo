@@ -153,7 +153,10 @@ h3 {
 
 h1 {
   font-size: 166px;
-  font-size: 8.3rem; }
+  font-size: 8.3rem;
+  color: white; }
+  h1 span {
+    color: #f8e71c; }
 
 h2 {
   font-size: 56.3px;
@@ -181,6 +184,117 @@ input[type="submit"] {
   font-size: 1rem;
   line-height: 32px; }
 
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+  font-size: 1rem; }
+
+.topBar,
+a {
+  color: white; }
+
+button,
+input[type="submit"] {
+  color: white; }
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../assets/homeHeader.jpg") no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeader.jpg") no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeader.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeader.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  header .homeTitle {
+    z-index: 20;
+    height: calc(100% - 90px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    header .homeTitle h1 {
+      margin: 0;
+      font-weight: 400; }
+    header .homeTitle span {
+      display: block;
+      text-transform: lowercase; }
+  header .headerImageContainer {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../assets/homeHeaderBox.jpg") no-repeat;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeaderBox.jpg") no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeaderBox.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3)), url("../assets/homeHeaderBox.jpg") no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 50vw;
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    right: 0; }
+
+header .headerWrapper {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif; }
+
+header .topBar {
+  margin: 0 10%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header .topBar .logo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%; }
+    header .topBar .logo h2 {
+      font-weight: 400;
+      margin: 0; }
+  header .topBar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0;
+    flex: 1 0; }
+    header .topBar ul li {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+      flex: 0 0 10%;
+      text-align: center;
+      text-transform: uppercase; }
+      header .topBar ul li a:hover {
+        color: #f8e71c; }
+
 .founderText h3 {
   font-size: 42px;
   font-size: 2.1rem; }
+
+.contactHeader {
+  background-image: url("/assets/contactHeader.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat; }

@@ -1,0 +1,49 @@
+header {
+    
+    .headerWrapper {
+        margin: 0;
+        font-family: $primaryFont;
+    }
+    
+    .topBar {
+        margin: 0 10%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        // border: 2px solid yellow;
+    
+        .logo {
+	        flex: 0 0 10%;
+            // border: 2px solid pink;
+            
+            h2 {
+                font-weight: 400;
+                // border: 2px solid white;
+                margin: 0;
+            }
+        }
+        
+        ul {
+            display: flex;
+            margin: 0; 
+            padding: 0;
+            flex:1 0;
+            // border: 2px solid turquoise;
+
+            li {
+                flex: 0 0 10%;
+                text-align: center;
+                text-transform: uppercase;
+
+                a:hover {
+                    color: $primaryAccent;
+                }
+            }
+        }
+
+    }
+    
+}
+
+
+
