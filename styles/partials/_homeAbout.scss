@@ -1,9 +1,9 @@
 .aboutPlanted {
     background-color: $primaryColour;
-    height: 50vh;
+    height: 80vh;
     .aboutText {
         height: inherit;
-        padding-top: 4%;
+        padding-top: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -17,7 +17,6 @@
             text-align: center;
         }
     }
-   
 }
 
 @media(max-width: 930px) {

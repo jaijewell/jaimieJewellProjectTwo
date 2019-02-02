@@ -178,12 +178,14 @@ input[type="email"] {
   font-weight: 300;
   line-height: 32px; }
 
-button,
+button a,
 input[type="submit"] {
   font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   font-size: 1rem;
-  line-height: 32px; }
+  line-height: 32px;
+  letter-spacing: 1px; }
 
 .wrapper {
   max-width: 1600px;
@@ -207,7 +209,10 @@ input[type="submit"] {
   color: white;
   background-color: #0e902d;
   border: none;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  margin-bottom: 10%;
+  height: 50px;
+  width: 20%; }
 
 header {
   background: url("../assets/homeHeader.jpg") no-repeat;
@@ -283,7 +288,8 @@ header .topBar {
   header .topBar .logo {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 10%;
-    flex: 0 0 10%; }
+    flex: 0 0 10%;
+    padding-right: 2%; }
     header .topBar .logo h2 {
       font-weight: 400;
       margin: 0; }
@@ -301,7 +307,11 @@ header .topBar {
       -ms-flex: 0 0 10%;
       flex: 0 0 10%;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 24px;
+      font-size: 1.2rem; }
       header .topBar ul li a:hover {
         color: #f8e71c; }
 
@@ -315,10 +325,10 @@ header .topBar {
 
 .aboutPlanted {
   background-color: #f0efed;
-  height: 50vh; }
+  height: 80vh; }
   .aboutPlanted .aboutText {
     height: inherit;
-    padding-top: 4%;
+    padding-top: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -346,6 +356,64 @@ header .topBar {
 @media (max-width: 500px) {
   .aboutPlanted {
     height: 90vh; } }
+
+.plantedArticles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .plantedArticles .articleOne,
+  .plantedArticles .articleTwo {
+    width: 670px;
+    height: 760px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .plantedArticles .articleOne,
+  .plantedArticles .articleTwo {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .plantedArticles .articleOneText {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: flex-end;
+    flex-direction: flex-end;
+    margin-left: 10%;
+    text-align: right; }
+  .plantedArticles .articleTwoText {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: flex-start;
+    flex-direction: flex-start;
+    margin: 11% 10% 0 0; }
+  .plantedArticles .articleOneImage {
+    position: relative; }
+    .plantedArticles .articleOneImage img {
+      position: absolute;
+      top: -35px;
+      -webkit-box-shadow: 20px 20px #f8e71c;
+      box-shadow: 20px 20px #f8e71c; }
+  .plantedArticles .articleTwoImage {
+    position: relative; }
+    .plantedArticles .articleTwoImage img {
+      position: absolute;
+      bottom: -35px;
+      -webkit-box-shadow: -20px 20px #f8e71c;
+      box-shadow: -20px 20px #f8e71c; }
+
+.connect {
+  padding-top: 10%;
+  background-color: #f0efed; }
+  .connect h3 {
+    margin: 0;
+    display: block; }
 
 .founderText h3 {
   font-size: 42px;

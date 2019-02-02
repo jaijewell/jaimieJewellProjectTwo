@@ -38,12 +38,12 @@ input[type="email"] {
     line-height: $primaryLineHeight;
 }
 
-button,
+button a,
 input[type="submit"] {
     font-family: $primaryFont;
+    font-weight: 700;
     @include fontSize(20);
     line-height: $primaryLineHeight;
+    letter-spacing: $secondaryLetterSpacing;
 }
-
-
 
