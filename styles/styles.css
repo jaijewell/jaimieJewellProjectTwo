@@ -561,12 +561,78 @@ header .topBar {
 .banner {
   background-image: url("../assets/homeBanner.jpg");
   background-repeat: no-repeat;
-  height: 50vh;
-  width: 100%; }
+  background-size: cover;
+  height: 58vh; }
 
-.founderText h3 {
-  font-size: 42px;
-  font-size: 2.1rem; }
+@media (max-width: 1470px) {
+  .banner {
+    background-position: top center; } }
+
+@media (max-width: 930px) {
+  .banner {
+    background-position: top left; } }
+
+@media (max-width: 635px) {
+  .banner {
+    background-position: 10% 100%; } }
+
+@media (max-width: 600px) {
+  .banner {
+    background-position: 85% 100%; } }
+
+@media (max-width: 430px) {
+  .banner {
+    background-position: top center; } }
+
+.founderContainer {
+  height: 60vh;
+  background-color: #f0efed; }
+  .founderContainer .founderContent {
+    height: inherit;
+    margin: 0 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .founderContainer .founderContent .founderImage {
+      -webkit-box-shadow: 20px 20px #f8e71c;
+      box-shadow: 20px 20px #f8e71c; }
+    .founderContainer .founderContent .founderImage img {
+      display: block; }
+    .founderContainer .founderContent .founderText {
+      height: 304px;
+      width: 70%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 5%;
+      position: relative; }
+      .founderContainer .founderContent .founderText .founderTitle {
+        font-size: 42px;
+        font-size: 2.1rem;
+        margin: 0;
+        letter-spacing: 1px;
+        border: 2px solid tomato; }
+      .founderContainer .founderContent .founderText p {
+        padding: 2.5% 0;
+        margin: 0; }
+      .founderContainer .founderContent .founderText button {
+        margin: 2% 0 0 0;
+        position: absolute;
+        bottom: -20px; }
+
+.galleryContainer {
+  margin: 5% 10%;
+  border: 2px solid tomato; }
 
 .contactHeader {
   background-image: url("/assets/contactHeader.jpg");

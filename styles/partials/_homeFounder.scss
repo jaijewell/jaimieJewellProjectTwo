@@ -1,3 +1,59 @@
-.founderText h3 {
-    @include fontSize(42);
+.founderContainer {
+    height: 60vh;
+    background-color: $primaryColour;
+    
+    
+
+
+    .founderContent {
+        height: inherit;
+        margin: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .founderImage {
+            box-shadow: 20px 20px $primaryAccent;
+            
+        }
+
+        .founderImage img {
+            display: block; //removes white space from bottom of image
+        }
+
+        .founderText {
+            
+            height: 304px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        // align-items: space-between;
+            // padding-top: 2.5%;
+            padding-left: 5%;
+            position: relative;
+            
+             
+            .founderTitle {
+                @include fontSize(42);
+                margin: 0;
+                letter-spacing: $secondaryLetterSpacing;
+                border: 2px solid tomato;
+            }
+
+            p {
+                padding: 2.5% 0;
+                margin: 0;
+            }
+            
+            button {
+                margin: 2% 0 0 0;
+                position: absolute;
+                bottom: -20px; //same height as box shadow $primaryAccent
+                
+                
+            }
+        }
+    }
 }
+
+// maybe make button full size? or change to floats?
