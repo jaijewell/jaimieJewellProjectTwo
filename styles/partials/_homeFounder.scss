@@ -37,7 +37,6 @@
                 @include fontSize(42);
                 margin: 0;
                 letter-spacing: $secondaryLetterSpacing;
-                border: 2px solid tomato;
             }
 
             p {
@@ -48,9 +47,7 @@
             button {
                 margin: 2% 0 0 0;
                 position: absolute;
-                bottom: -20px; //same height as box shadow $primaryAccent
-                
-                
+                bottom: -20px; //same height as box shadow $primaryAccent  
             }
         }
     }
