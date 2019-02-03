@@ -17,16 +17,51 @@
             text-align: center;
         }
     }
-}
+} // general .aboutPlanted styling ends
 
+// media queries begin
 @media(max-width: 930px) {
     .aboutPlanted {
-        height: 75vh
+        height: 75vh;
+    }
+}
+
+@media(max-width: 760px) {
+    .aboutPlanted {
+        button {
+            width: 30%;
+
+            a {
+            @include fontSize(18);
+            }
+        }
+    }
+}
+
+@media(max-width: 585px) {
+    .aboutPlanted {
+        height: 90vh;
+        
+        button {
+            width: 35%;
+
+            a {
+                @include fontSize(16);
+            }
+        }
     }   
 }
 
-@media(max-width: 500px) {
-    .aboutPlanted {
-        height: 90vh
-    }   
+@media(max-width: 450px) {
+    .aboutPlanted { 
+        height: 100vh;
+         
+        button {
+            width: 50%;
+
+            a {
+                @include fontSize(16);
+            }
+        }
+    }
 }

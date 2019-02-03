@@ -1,6 +1,7 @@
 .plantedArticles {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .articleOne,
     .articleTwo {
@@ -44,9 +45,108 @@
             position: absolute;
             bottom: -35px;
             box-shadow: -20px 20px $primaryAccent;
+        }  
+    }
+} //general .plantedArticles styling ends
+
+//media queries begin
+@media(max-width: 1400px) {
+    .plantedArticles {
+        justify-content: center;
+    
+        .articleTwoImage{
+            order: -1;
+            margin-top: calc(760px / 2);
+        }
+    }
+}
+
+@media(max-width: 720px) {
+    .plantedArticles {
+        .articleOne,
+        .articleTwo {
+            justify-content: space-between;
+            align-content: stretch;
+            height: 600px;
         }
        
+        .articleOneImage,
+        .articleTwoImage{
+            margin-top: -50px;
+            background-size: cover;
+            height: 40vh;  
+    
+            img {
+                display: none;
+            }
+        }
+    
+        .articleOne {
+            .articleOneImage {
+                background-image: url('../assets/homeArticlesFlowers01.jpg');
+                box-shadow: 20px 20px $primaryAccent;
+            }
+        }
+
+        .articleTwo {
+            .articleTwoImage {
+                background-image: url('../assets/homeArticlesFlowers02.jpg');
+                margin-top: 0;
+                box-shadow: -20px 20px $primaryAccent; 
+            }
+        }
+        .articleOneText,
+        .articleTwoText {
+                margin: 2% 5%;
+        }
     }
-    
-    
 }
+
+@media(max-width: 516px) {
+    .plantedArticles {
+         button {
+            width: 30%;
+
+            a {
+                @include fontSize(18);
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 380px) {
+    .plantedArticles {
+        .articleOne .articleOneImage,
+        .articleTwo .articleTwoImage {
+            
+            width: 300px;
+        
+        }
+        
+        .articleOne {
+            
+
+            .articleOneImage {
+                margin-right: 5%;
+                box-shadow: 20px 20px $primaryAccent;
+            }
+        }
+        .articleTwo {
+            .articleTwoImage {
+                margin-left: 5%;
+                box-shadow: -20px 20px $primaryAccent;
+            }
+        }
+        
+        button {
+            width: 40%;
+
+            a {
+                @include fontSize(18);
+            }
+        }
+    }
+}
+
