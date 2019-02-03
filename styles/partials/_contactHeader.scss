@@ -1,7 +1,38 @@
-.contactHeader  {
-    background-image: url('/assets/contactHeader.jpg');
-    height: 100vh;
+.contact {
+    background-image: url('../assets/contactHeader.jpg');
+    height: 75vh;
     background-size: cover;
     background-repeat: no-repeat;
+
+    .topBar {
+        background-color: darken($black, 10%);
+    
+
+        // how to highlight and change font of last list item to yellow
+        ul {
+            .contactItem  {
+                a {
+                    color: $primaryAccent;
+                }
+            }
+        }
+    }
+
+    .contactTitle {
+        display: flex;
+        height: inherit;
+        align-items: flex-end;
+
+        h1 {
+            color: $primaryAccent;
+            @include fontSize(80);
+            line-height: 92px;
+            margin: 0;
+            width: 30%;
+            padding:0 0 2.5% 15%;
+            
+        }
+    }
+   
 }
 

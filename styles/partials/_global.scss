@@ -27,7 +27,12 @@ input[type="submit"] {
     margin-bottom: 10%;
     height: 50px;
     width: 25%
-    
+}
+
+input[type="text"],
+input[type="email"] {
+    height: 50px;
+    line-height: $primaryLineHeight;
 }
 
 

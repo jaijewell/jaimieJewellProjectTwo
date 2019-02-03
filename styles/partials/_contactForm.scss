@@ -1,0 +1,61 @@
+
+.formSection {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -300px;
+    right: 100px;
+    z-index: 10px;
+}
+
+.formContainer {
+    height: 55vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: $secondaryColour;
+    box-shadow: $boxShadowRight;
+
+    .contactForm {
+        padding: 7% 5%;
+        width: 95%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        .topForm {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        padding-left: 20px;
+        width: 48%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid $secondaryAccent; 
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        padding: 3% 0 0 2%;
+        border: 2px solid $secondaryAccent;
+        
+
+        &::placeholder {
+          font-weight: 300; 
+          
+        }  
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        margin: 0;
+    }
+}

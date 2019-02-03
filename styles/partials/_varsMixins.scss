@@ -15,6 +15,9 @@ $primaryLetterSpacing: 1.3px;
 $secondaryLetterSpacing: 1px;
 $primaryLineHeight:  32px;
 
+$boxShadowLeft: 20px 20px $primaryAccent;
+$boxShadowRight: -20px 20px $primaryAccent;
+
 
 @mixin fontSize($sizeValue){
   font-size: $sizeValue * 1px;

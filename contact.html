@@ -12,7 +12,7 @@
 </head>
 <body>
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
-    <header class="headerWrapper">
+    <header class="contact headerWrapper">
         <nav class="topBar">
             <div class="logo">
                 <h2>Planted</h2>
@@ -21,24 +21,30 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li class="contactItem"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="contactTitle">
             <h1>Get in Touch</h1>
         </div>
     </header>
-    <section id="maincontent">
-        <form action="" method="POST" class="contactForm" autocomplete="off" name="contact">
-            <label class="visuallyhidden" for="firstName">Name</label>
-            <input type="text" name="firstName" placeholder="Name" id="firstName">
-            <label for="email" class="visuallyHidden">Email address</label>
-            <input type="email" name="email" id="email" placeholder="Email address">
-            <label for="contact"></label>
-            <textarea id="contact" name="contact" cols="30" rows="10"></textarea>
-            <label for="submitMessage" class="visuallyHidden">Submit comment</label>
-            <input type="submit" id="submitMessage" value="Submit">
-        </form>
+    <section id="maincontent" class="formSection">
+        <div class="formContainer">
+            <form action="" method="POST" class="contactForm" autocomplete="off" name="contact">
+                <div class="topForm">
+                    <label class="visuallyhidden" for="firstName">Name</label>
+                    <input type="text" name="firstName" placeholder="Name" id="firstName">
+                    <label for="email" class="visuallyhidden">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                </div>
+                <div class="message">
+                    <label for="contact"></label>
+                    <textarea id="contact" name="contact" placeholder="Message" cols="30" rows="10"></textarea>
+                </div>
+                <label for="submitMessage" class="visuallyhidden">Submit comment</label>
+                <input type="submit" id="submitMessage" value="Submit">
+            </form>
+        </div>
     </section>
     <section>
         <div class="socialMediaIcons">
@@ -57,7 +63,7 @@
 
 
         </div>
-        <div class="contact">
+        <div class="contactInfo">
             <p>info@email.com</p>
             <p>123 - 456 - 7890</p>
             <p>123 Queen Street West, Unit 10</p>
