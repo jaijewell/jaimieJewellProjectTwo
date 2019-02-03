@@ -498,11 +498,52 @@ header .topBar {
       font-size: 0.9rem; } }
 
 .connect {
-  padding-top: 10%;
-  background-color: #f0efed; }
-  .connect h3 {
-    margin: 0;
-    display: block; }
+  height: 75vh;
+  background-color: #f0efed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 5% 13% 5% 13%;
+  margin: 0; }
+  .connect .connectItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .connect .connectItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 25px; }
+    .connect .connectItem::before {
+      background-color: #f8e71c;
+      width: 75px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 2%; }
+  .connect .locationsLink::before {
+    content: url("../assets/iconLeaf.svg"); }
+  .connect .communityLink::before {
+    content: url("../assets/iconUsers.svg"); }
+  .connect .homeBlogLink::before {
+    content: url("../assets/iconBlog.svg"); }
+  .connect .homeContactLink::before {
+    content: url("../assets/iconPhone.svg"); }
+
+.connectText h3,
+.connectText p {
+  color: #2c2c2c;
+  line-height: 32px; }
+
+.banner {
+  background-image: url("../assets/homeBanner.jpg");
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%; }
 
 .founderText h3 {
   font-size: 42px;

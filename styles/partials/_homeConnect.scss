@@ -1,9 +1,87 @@
 .connect {
-    padding-top: 10%;
+    height: 75vh;
     background-color: $primaryColour;
-    h3 {
-        margin: 0;
-        display: block;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 13% 5% 13%;
+    margin: 0;
+
+    .connectItems {
+        display: flex;
+        justify-content: space-between;
     }
 
-}
+    .connectItem {
+    display: flex;
+    // position: relative;
+    padding-right: 25px;
+// general stylying for all before elements
+        &::before {
+            background-color: $primaryAccent;
+            width: 75px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 2%;
+            // align-items: center;
+            // justify-content: space-between;
+            // position: absolute;
+            // top: 15px;
+            // left: -10px;
+        }
+    }
+        .locationsLink {
+            &::before {
+                content:url('../assets/iconLeaf.svg');
+            }
+        }
+
+        .communityLink {
+            &::before {
+                content:url('../assets/iconUsers.svg');
+            }
+        }
+
+        .homeBlogLink {
+            &::before {
+                content:url('../assets/iconBlog.svg');
+                // width: 6%;
+                // height: 8%;
+                // padding: 2.5%
+            }
+        }
+
+        .homeContactLink {
+            &::before {
+                content:url('../assets/iconPhone.svg');
+            }
+        }          
+    }
+    
+    // .icon {
+    //     width: 100px;
+    //     height: 70px;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+
+    //     i {
+    //         z-index: 50;
+    //         @include fontSize(35);
+    //         position: absolute;
+    //         top: 25px;
+
+    //     }
+    // }
+
+    //  .icon .fa-users {
+    //     left: -2px;
+    // }
+    // .icon .fa-file {
+    //     left: 5px;
+    // }
+  
+    .connectText h3,
+    .connectText p {
+        color: $black;
+        line-height: $primaryLineHeight;
+    }   
