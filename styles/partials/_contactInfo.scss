@@ -1,0 +1,46 @@
+.infoContainer {
+    height: 50vh;
+    padding-left: 15%;
+    background-color: $primaryColour;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    
+    .socialMediaIcons {
+        width: 125px;
+        .socialMediaNav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    ul li a {
+        color: $secondaryAccent;
+        font-size: 1.3rem;
+
+    }
+
+    // li a:nth-of-type(1){
+    //     padding-left: 0;
+    // }
+
+    p {
+        margin: 0;
+    }
+    h3 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding: 10px 0;
+        // span {
+          
+            // font-size: 1.5rem;
+        // }
+
+    }
+
+    
+
+}

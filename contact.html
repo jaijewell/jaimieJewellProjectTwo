@@ -24,52 +24,51 @@
                 <li class="contactItem"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="contactTitle">
-            <h1>Get in Touch</h1>
+        <div class="headerContent">
+            <div class="contactTitle">
+                <h1>Get in Touch</h1>
+            </div>
+            <div class="formContainer">
+                <form action="" method="POST" class="contactForm" autocomplete="off" name="contact">
+                    <div class="topForm">
+                        <label class="visuallyhidden" for="firstName">Name</label>
+                        <input type="text" name="firstName" placeholder="Name" id="firstName">
+                        <label for="email" class="visuallyhidden">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                    </div>
+                    <div class="message">
+                        <label for="contact"></label>
+                        <textarea id="contact" name="contact" placeholder="Message" cols="30" rows="10"></textarea>
+                    </div>
+                    <label for="submitMessage" class="visuallyhidden">Submit comment</label>
+                    <input type="submit" id="submitMessage" value="Submit">
+                </form>
+            </div>
         </div>
     </header>
-    <section id="maincontent" class="formSection">
-        <div class="formContainer">
-            <form action="" method="POST" class="contactForm" autocomplete="off" name="contact">
-                <div class="topForm">
-                    <label class="visuallyhidden" for="firstName">Name</label>
-                    <input type="text" name="firstName" placeholder="Name" id="firstName">
-                    <label for="email" class="visuallyhidden">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                </div>
-                <div class="message">
-                    <label for="contact"></label>
-                    <textarea id="contact" name="contact" placeholder="Message" cols="30" rows="10"></textarea>
-                </div>
-                <label for="submitMessage" class="visuallyhidden">Submit comment</label>
-                <input type="submit" id="submitMessage" value="Submit">
-            </form>
+    <section id="maincontent" class="main">
+        <div class="infoContainer">
+            <div class="socialMediaIcons">
+                <nav class="socialMediaNav">
+                    <ul>
+                        <li><a href="http://www.facebook.com"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><span class="sr-only">Follow
+                                us on Facebook</span></li>
+                        <li><a href="http://www.instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a><span class="sr-only">Follow
+                                us on Instagram</span></li>
+                        <li><a href="http://www.twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a><span class="sr-only">Follow
+                                us on Twitter</span></li>
+                        <li><a href="http://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a><span class="sr-only">Follow
+                            us on Whatsapp</span></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contactInfo">
+                <h3>info@email.com</h3>
+                <p>123 - 456 - 7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>M5V2D5</p>
+            </div>
         </div>
-    </section>
-    <section>
-        <div class="socialMediaIcons">
-            <nav class="socialMediaNav">
-                <ul>
-                    <li><a href="http://www.facebook.com"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><span class="sr-only">Follow
-                            us on Facebook</span></li>
-                    <li><a href="http://www.instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a><span class="sr-only">Follow
-                            us on Instagram</span></li>
-                    <li><a href="http://www.twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a><span class="sr-only">Follow
-                            us on Twitter</span></li>
-                    <li><a href="http://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a><span class="sr-only">Follow
-                        us on Whatsapp</span></li>
-                </ul>
-            </nav>
-
-
-        </div>
-        <div class="contactInfo">
-            <p>info@email.com</p>
-            <p>123 - 456 - 7890</p>
-            <p>123 Queen Street West, Unit 10</p>
-            <p>M5V2D5</p>
-        </div>
-
     </section>
     <footer>
         <p>Copyright &copy 2018 HackerYou</p>

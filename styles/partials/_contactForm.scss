@@ -1,23 +1,33 @@
 
-.formSection {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: -300px;
-    right: 100px;
-    z-index: 10px;
-}
+// .formSection {
+//     display: flex;
+//     justify-content: flex-end;
+//     position: relative;
+//     top: -300px;
+//     right: 100px;
+//     z-index: 10px;
+// }
 
+.headerContent {
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: flex-end;
+    position: relative;
+    height: 100%;
+}
 .formContainer {
     height: 55vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
+    width: 55%;
     background-color: $secondaryColour;
     box-shadow: $boxShadowRight;
+    // display: flex;
+    position: absolute;
+    bottom: -300px;
+    right: 100px;
+    z-index: 10px;
 
     .contactForm {
-        padding: 7% 5%;
+        padding: 5% 5%;
         width: 95%;
         height: inherit;
         display: flex;

@@ -1,14 +1,12 @@
 .contact {
     background-image: url('../assets/contactHeader.jpg');
-    height: 75vh;
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
 
     .topBar {
         background-color: darken($black, 10%);
     
-
-        // how to highlight and change font of last list item to yellow
         ul {
             .contactItem  {
                 a {
@@ -19,18 +17,24 @@
     }
 
     .contactTitle {
-        display: flex;
+        width: 20%;
         height: inherit;
+        display: flex;
+        justify-content: flex-end;
         align-items: flex-end;
+        // padding-bottom: 2%;
+        margin-left: 15%;
+            
+        
 
         h1 {
             color: $primaryAccent;
             @include fontSize(80);
             line-height: 92px;
             margin: 0;
-            width: 30%;
-            padding:0 0 2.5% 15%;
-            
+            align-items: center;
+         
+          
         }
     }
    
