@@ -69,3 +69,36 @@
         margin: 0;
     }
 }
+
+// media queries begin
+@media(max-width: 1186px) {
+     .formContainer {
+        position: static !important;  
+    }
+
+    .formContainer .contactForm .topForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formContainer input[type="text"],
+    .formContainer input[type="email"] {
+        width: 100%;
+    }
+} //1186 media query ends here
+
+@media(max-width: 700px) {
+     .formContainer {
+        width: 85%;  
+    }
+
+    // .formContainer .contactForm .topForm {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    // .formContainer input[type="text"],
+    // .formContainer input[type="email"] {
+    //     width: 100%;
+    // }
+} //1186 media query ends here

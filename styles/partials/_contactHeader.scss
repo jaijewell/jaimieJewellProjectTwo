@@ -14,7 +14,7 @@
                 }
             }
         }
-    }
+    } // .topBar ends here
 
     .contactTitle {
         width: 20%;
@@ -22,7 +22,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        // padding-bottom: 2%;
         margin-left: 15%;
             
         
@@ -38,5 +37,54 @@
         }
     }
    
+} // .contact general styling ends here
+
+// media queries begin
+@media(max-width: 1186px) {
+    .contact { 
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .contact.logo {
+        flex: 0 0 100%;
+    } 
+    .contact .topBar ul {      
+        display: none;
+    }
+    
+    .headerContent {
+        position: static !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .contactTitle {
+        margin: 0;
+        padding-top: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+     .formContainer {
+        position: static !important;
+        
+    }
+  
+} //1186 media query ends here
+
+@media(max-width: 700px) {
+    .contact .contactTitle h1 {
+        @include fontSize(65);
+    }
 }
 
+@media(max-width: 400px) {
+    .contact .contactTitle h1 {
+        @include fontSize(50);
+    }
+}

@@ -1,6 +1,6 @@
 .infoContainer {
     height: 50vh;
-    padding-left: 15%;
+    padding-left: 10%;
     background-color: $primaryColour;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,19 @@
         // }
 
     }
-
-    
-
 }
+
+// media queries begin
+@media(max-width: 1186px) {
+    .infoContainer {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infoContainer .socialMediaIcons {
+        width: 220px;
+    }
+  
+} //1186 media query ends here
