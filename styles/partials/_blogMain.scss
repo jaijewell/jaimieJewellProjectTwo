@@ -1,0 +1,47 @@
+.blogContent {
+    float: right;
+    width: 60%;
+    
+   
+    .blogContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .blogImage {
+        box-shadow: $boxShadowLeft;
+        margin-left: 20px;
+        margin-top: -25%;
+        z-index: 100;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .textContainer { 
+        border-left: 5px solid $primaryAccent;
+        border-bottom: 5px solid $primaryAccent;
+        width: 75%;
+        padding: 7% 0% 5% 5%;
+
+        h2 {
+            @include fontSize(43);
+            letter-spacing: $primaryLetterSpacing;
+        }
+
+        p:nth-of-type(1) {
+            margin-top: -30px;
+            padding-bottom: 5%;
+            color: $tertiaryAccent;
+            font-style: italic;
+            // border: 2px solid tomato;
+        }
+    } 
+
+}
+
+   
+    

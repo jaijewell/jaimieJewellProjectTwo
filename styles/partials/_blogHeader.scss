@@ -1,0 +1,40 @@
+.blogHeader {
+    background: url('../assets/blogHeader.jpg') no-repeat;
+    height: 60vh;
+    background-size: cover;
+
+    .topBar {
+        background-color: darken($black, 10%);
+    
+        ul {
+            .blogItem  {
+                a {
+                    color: $primaryAccent;
+                }
+            }
+        }
+    } // .topBar styling ends here
+
+    .blogTitle {
+        width: 20%;
+        height: inherit;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0 0 7% 10%;
+            
+        h1 {
+            color: $primaryAccent;
+            @include fontSize(80);
+            line-height: 92px;
+            margin: 0; 
+        }
+    }
+   
+} //.blogHeader styling ends here
+
+//media queries begin here
+
+@media(max-width: 000px) {
+
+}

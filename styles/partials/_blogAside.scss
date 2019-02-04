@@ -1,0 +1,11 @@
+aside {
+    width: calc((100% - 60%) - 10%);
+    display: flex;
+    order: -1;
+}
+
+.asideContainer {
+    float: left;
+    display: flex;
+    flex-direction: column;
+}

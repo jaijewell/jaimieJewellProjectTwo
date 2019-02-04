@@ -1,0 +1,46 @@
+.commentsContainer {
+    width: 75%;
+    padding: 5% 5% 10% 5%;
+    float: left;
+    
+    
+    .profileContainer {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    }
+
+    figure {
+        display: flex;
+        justify-content: space-between;
+
+        .profileImage {
+            width: 20%;
+    
+            img {
+                margin-top: 10px;
+                width: 75%;
+            }
+        }
+
+        figcaption {
+            width: 75%;
+        
+            h4{
+                @include fontSize(20);
+                color: $tertiaryAccent;
+                line-height: $primaryLineHeight;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        
+        }
+    }
+}
+

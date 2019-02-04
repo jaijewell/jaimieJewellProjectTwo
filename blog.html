@@ -11,9 +11,9 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body class="">
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
-    <header class="headerWrapper">
+    <header class="blogHeader headerWrapper">
         <nav class="topBar">
             <div class="logo">
                 <h2>Planted</h2>
@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
+                <li class="blogItem"><a href="./blog.html">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -29,71 +29,88 @@
             <h1>Blog</h1>
         </div>
     </header>
-    <main id="maincontent">
-        <section class="blogMain">
-            <div class="missionImage">
-                <img src="assets/blogHeaderSquare.jpg" alt="a plant with two main sprouts, mostly an image of an offwhite wall">
+    <main id="mainContent clearfix">
+        <section class="blogContent">
+            <div class="blogContainer"> 
+                <div class="blogImage">
+                    <img src="assets/blogHeaderSquare.jpg" alt="a plant with two main sprouts, mostly an image of an offwhite wall">
+                </div>
+                <div class="textContainer">
+                    <div class="blogText">
+                        <h2>Our mission at Planted</h2>
+                        <p class="date">Monday, January 21, 2019 by Yousra</p>
+                        <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase.</p>
+
+                        <p> Corsair code of conduct bilge water crow's nest fire ship bilge pink Brethren of the Coast brig crimp. Clap of thunder fathom belaying pin ho dance the hempen jig scourge of the seven seas killick line pirate boom. Grog Barbary Coast square-rigged nipper Arr wench league topgallant black spot case shot.</p>
+
+                        <p>Jib quarterdeck matey code of conduct ahoy coffer salmagundi aye spyglass starboard. Black jack quarterdeck doubloon yawl Blimey pinnace scourge of the seven seas flogging lee crack Jennys tea cup. Rope's end take a caulk scourge of the seven seas cable strike colors come about parrel pillage gangplank sutler. Sink me Shiver me timbers spanker schooner take a caulk trysail American Main run a rig yard belay. Execution dock smartly long boat nipper rope's end spyglass bounty Blimey galleon handsomely. Gun spyglass Buccaneer doubloon squiffy tackle clap of thunder jack reef coffer. Square-rigged Plate Fleet come about boatswain measured fer yer chains belay chase barkadeer wherry heave down.Chandler doubloon handsomely pirate pillage yawl hearties rutters salmagundi hands. Square-rigged Letter of Marque grog blossom grapple hempen halter reef run a shot across the bow killick warp pink.</p>
+
+                        <p>Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.</p>  
+                    </div>  <!-- blogText ends here -->
+                </div> <!-- textContainer ends here -->
+            </div> <!-- blogContainer ends here -->
+        
+        <div class="commentsContainer">
+            
+            <div class="commentsTitle">
+                <h3>Comments</h3>
             </div>
-            <h2>Our Mission at Planted</h2>
-            <p class="date">Monday, January 21, 2019 by Yousra</p>
-            <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase.</p>
-
-            <p> Corsair code of conduct bilge water crow's nest fire ship bilge pink Brethren of the Coast brig crimp. Clap of thunder fathom belaying pin ho dance the hempen jig scourge of the seven seas killick line pirate boom. Grog Barbary Coast square-rigged nipper Arr wench league topgallant black spot case shot.</p>
-
-            <p>Jib quarterdeck matey code of conduct ahoy coffer salmagundi aye spyglass starboard. Black jack quarterdeck doubloon yawl Blimey pinnace scourge of the seven seas flogging lee crack Jennys tea cup. Rope's end take a caulk scourge of the seven seas cable strike colors come about parrel pillage gangplank sutler.            Sink me Shiver me timbers spanker schooner take a caulk trysail American Main run a rig yard belay. Execution dock smartly long boat nipper rope's end spyglass bounty Blimey galleon handsomely. Gun spyglass Buccaneer doubloon squiffy tackle clap of thunder jack reef coffer. Square-rigged Plate Fleet come about boatswain measured fer yer chains belay chase barkadeer wherry heave down.Chandler doubloon handsomely pirate pillage yawl hearties rutters salmagundi hands. Square-rigged Letter of Marque grog blossom grapple hempen halter reef run a shot across the bow killick warp pink.</p>
-
-            <p>Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.</p>
-        </section>  <!-- blogMain ends here -->
-        <section>
-            <h3>Comments</h3>
+            <div class="profileContainer">
             <figure>
-                <img src="assets/blogCommentsProfile01.jpg" alt="profile photo of a commenter">
+                <div class="profileImage">
+                    <img src="assets/blogCommentsProfile01.jpg" alt="profile photo of a commenter">
+                </div>
                 <figcaption>
-                    <p>Tuesday October 9th, 2019 by Jeremy</p>
+                    <h4>Tuesday October 9th, 2019 by Jeremy</h4>
                     <p>Where's my money... bitch? WHERE'S my money. Where's my. Where's MY money, bitch? Huh? Bitch? Where's my money, bitch? Oh that's good... where's my money. Where's my money, bitch. Bitch, where's my money. I will mess you... up. That how you wanna play this? Huh, Your call, your funeral Jack. Hey, do not mess with me I will bury you cause I'm crazy. You know, yeah... mucho loco. Do not... test me.</p>
                 </figcaption>
             </figure>
             <figure>
-                <img src="assets/blogCommentsProfile02.jpg" alt=" profile photo of commenter">
+                <div class="profileImage">
+                    <img src="assets/blogCommentsProfile02.jpg" alt=" profile photo of commenter">
+                </div>
                 <figcaption>
-                    <p>Wednesday October 10th, 2018 by Julia</p>
+                    <h4>Wednesday October 10th, 2018 by Julia</h4>
                     <p>This is glass grade. I mean, you got... Jesus, you got crystals in here 2 inches, 3 inches long. This is pure glass. You're a damn artist! This is art, Mr. White! Yeah, that's the thing, y'know? Your scumbag brother-in-law took my rainy day fund. Oh yeah. And tell that douche bag brother-in-law of yours to go towards the light.</p>
                 </figcaption>
             </figure>
-        </section>
-        <section>
-           <form action="" method="POST" class="commentForm" autocomplete="off" name="comments">
-                <label class="visuallyhidden" for="firstName">Name</label>
-                <input type="text" name="firstName" placeholder="Name" id="firstName">
-                <label for="email" class="visuallyHidden">Email address</label>
-                <input type="email" name="email" id="email" placeholder="Email address">
-                <label for="comment"></label>
-                <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
-                <label for="submitComment" class="visuallyHidden">Submit comment</label>
-                <input type="submit" id="submitComment" value="Post comment">
+            </div>
+        </div> <!-- commentsContainer ends here -->    
+        <div class="blogFormContainer">
+            <form action="" method="POST" class="commentForm" autocomplete="off" name="comments">
+                    <label class="visuallyhidden" for="firstName">Name</label>
+                    <input type="text" name="firstName" placeholder="Name" id="firstName">
+                    <label for="email" class="visuallyhidden">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                    <label for="comment"></label>
+                    <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+                    <label for="submitComment" class="visuallyhidden">Submit comment</label>
+                    <input type="submit" id="submitComment" value="Post comment">
             </form>
         </section>
     </main>
-    <aside>
-        <div class="asideImage">
-            <img src="assets/blogAsideImage.jpg" alt="creepy old house with a large window and wooden window frame. The house is covered in greenery and vines. Someone was probably murdered here">
-        </div>
-        <div class="asideText">
-            <div class="blankDiv">
-                <!-- keep div empty to size it to push sections down -->
+    <aside class="clearfix">
+        <div class="asideContainer">
+            <div class="asideImage">
+                <img src="assets/blogAsideImage.jpg" alt="creepy old house with a large window and wooden window frame. The house is covered in greenery and vines. Someone was probably murdered here">
             </div>
-            <div class="aboutPlanted">
-                <h3>About Planted</h3>
-                <p> No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! <span><a href="#">Find out more</a></span></p> 
+            <div class="asideText">
+                <div class="blankDiv">
+                    <!-- keep div empty to size it to push sections down -->
+                </div>
+                <div class="aboutPlanted">
+                    <h3>About Planted</h3>
+                    <p> No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! <span><a href="#">Find out more</a></span></p> 
+                </div>
+                <nav class="recentPosts">
+                    <ul>
+                        <li><a href="#">Uh, no, they're saying "Boo-urns, Boo-urns</a></li>
+                        <li><a href="#">Donuts. Is there anything they can't do?</a></li>
+                        <li><a href="#">Duffman can't breathe! OH NO!</a></li>
+                        <li><a href="#">Me fail English? That's unpossible.</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="recentPosts">
-                <ul>
-                    <li><a href="#">Uh, no, they're saying "Boo-urns, Boo-urns</a></li>
-                    <li><a href="#">Donuts. Is there anything they can't do?</a></li>
-                    <li><a href="#">Duffman can't breathe! OH NO!</a></li>
-                    <li><a href="#">Me fail English? That's unpossible.</a></li>
-                </ul>
-            </nav>
         </div>
     </aside>
     <footer>

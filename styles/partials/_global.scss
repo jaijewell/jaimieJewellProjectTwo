@@ -35,5 +35,34 @@ input[type="email"] {
     line-height: $primaryLineHeight;
 }
 
+input[type="text"],
+    input[type="email"] {
+        padding-left: 20px;
+        width: 48%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid $secondaryAccent; 
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+        padding: 3% 0 0 2%;
+        border: 2px solid $secondaryAccent;
+        
+
+        &::placeholder {
+          font-weight: 300; 
+          
+        }  
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        margin: 0;
+    }
+
+
 
 
