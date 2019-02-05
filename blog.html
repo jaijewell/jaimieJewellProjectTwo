@@ -78,40 +78,45 @@
         </div> <!-- commentsContainer ends here -->    
         <div class="blogFormContainer">
             <form action="" method="POST" class="commentForm" autocomplete="off" name="comments">
+                <div class="topForm">
                     <label class="visuallyhidden" for="firstName">Name</label>
                     <input type="text" name="firstName" placeholder="Name" id="firstName">
                     <label for="email" class="visuallyhidden">Email address</label>
                     <input type="email" name="email" id="email" placeholder="Email address">
+                </div>
+                <div class="message">
                     <label for="comment"></label>
-                    <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+                    <textarea id="comment" name="comment" placeholder="Message" cols="30" rows="10"></textarea>
+                </div>
                     <label for="submitComment" class="visuallyhidden">Submit comment</label>
                     <input type="submit" id="submitComment" value="Post comment">
+                
             </form>
         </section>
     </main>
-    <aside class="clearfix">
-        <div class="asideContainer">
+    <aside>
+        <div class="asideWrapper">
             <div class="asideImage">
                 <img src="assets/blogAsideImage.jpg" alt="creepy old house with a large window and wooden window frame. The house is covered in greenery and vines. Someone was probably murdered here">
             </div>
-            <div class="asideText">
-                <div class="blankDiv">
-                    <!-- keep div empty to size it to push sections down -->
-                </div>
-                <div class="aboutPlanted">
-                    <h3>About Planted</h3>
-                    <p> No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! <span><a href="#">Find out more</a></span></p> 
-                </div>
-                <nav class="recentPosts">
-                    <ul>
-                        <li><a href="#">Uh, no, they're saying "Boo-urns, Boo-urns</a></li>
-                        <li><a href="#">Donuts. Is there anything they can't do?</a></li>
-                        <li><a href="#">Duffman can't breathe! OH NO!</a></li>
-                        <li><a href="#">Me fail English? That's unpossible.</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+            <div class="asideContainer">
+                <div class="asideText"> 
+                    <div class="blogAboutPlanted">
+                        <h3>About planted</h3>
+                        <p> No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! <span><a href="#">Find out more.</a></span></p> 
+                    </div>
+                    <nav class="recentPosts">
+                        <h3>Recent posts</h3>
+                        <ul>
+                            <li><a href="#">Uh, no, they're saying "Boo-urns, Boo-urns</a></li>
+                            <li><a href="#">Donuts. Is there anything they can't do?</a></li>
+                            <li><a href="#">Duffman can't breathe! OH NO!</a></li>
+                            <li><a href="#">The goggles, they do nothing!</a></li>
+                        </ul>
+                    </nav> <!-- recentPosts nav ends here -->
+                </div> <!-- asideText ends here -->
+            </div> <!-- asideWrapper ends here -->
+        </div> 
     </aside>
     <footer>
         <p>Copyright &copy 2018 HackerYou</p>

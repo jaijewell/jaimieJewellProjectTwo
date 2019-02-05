@@ -1,11 +1,94 @@
 aside {
-    width: calc((100% - 60%) - 10%);
-    display: flex;
-    order: -1;
+    margin-top: 8%;
+    width: 25%;
+    color: black;
+    // border: 2px solid tomato;
+    // background-color: $secondaryColour;
+    
+
+
+    .asideWrapper {
+        position: relative;
+        .asideImage {
+            position: absolute;
+            top: -25px;
+           
+            width: 513px;
+            
+
+            img {
+                object-fit: cover;
+                
+                
+            }
+        }
+    }  
 }
 
+
 .asideContainer {
-    float: left;
+    height: 94vh;
+    margin-left: 28%;
+    padding: 420px 10% 0 5% ;
+    width: 100%;
+    background-color: $secondaryColour;
     display: flex;
     flex-direction: column;
+    // position: absolute;
+    // top: 0px;
+    // right: -200px;
+  
 }
+
+
+.asideText {
+    // float: left;
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid skyblue;
+
+    .blogAboutPlanted {
+    padding-bottom: 25px;
+    }
+
+    h3 {
+        text-transform: capitalize;
+    }
+
+    span a {
+        font-style: italic;
+        color: $tertiaryAccent;
+        font-weight: 700;
+    }
+
+    .recentPosts {    
+        ul {
+            line-height: $primaryLineHeight;
+            
+            li {
+                &::before {
+                    color:$tertiaryAccent; 
+                    content: "\2022"; 
+                    font-size: 1em; 
+                    position: relative;
+                    top: 0; 
+                    left: -35px;
+                //idea from LockDown Design https://www.lockedownseo.com/change-the-bullet-color-of-a-list-item-with-css/ because for some reason my bullets wouldn't display, even using the !important feature - the only other location that I styled lis as list-style-type:none was in my global stylesheet.
+                }
+            }
+        } 
+    }
+}
+
+aside nav {
+    // border: 2px solid green;
+    
+}
+
+aside nav a {
+    color: black;
+    // border: 2px solid pink;
+    
+}
+
+// have to style UL

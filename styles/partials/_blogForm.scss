@@ -1,5 +1,26 @@
 .blogFormContainer {
-    float: right;
-    width: 100%;
+    float: left;
+    height: 55vh;
+    width: 75%;
+   
+    .commentForm {
+        padding: 5% 0 10% 0;
+ 
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        .topForm {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
 
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        background-color: $primaryColour;
+    }
  }

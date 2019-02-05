@@ -726,6 +726,9 @@ footer {
       line-height: 92px;
       margin: 0; }
 
+body {
+  background-color: #f0efed; }
+
 .blogContent {
   float: right;
   width: 60%; }
@@ -802,20 +805,58 @@ footer {
         margin: 0; }
 
 .blogFormContainer {
-  float: right;
-  width: 100%; }
+  float: left;
+  height: 55vh;
+  width: 75%; }
+  .blogFormContainer .commentForm {
+    padding: 5% 0 10% 0;
+    height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .blogFormContainer .commentForm .topForm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .blogFormContainer input[type="text"],
+  .blogFormContainer input[type="email"],
+  .blogFormContainer textarea {
+    background-color: #f0efed; }
 
 aside {
-  width: calc((100% - 60%) - 10%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1; }
+  margin-top: 8%;
+  width: 25%;
+  color: black; }
+  aside .asideWrapper {
+    position: relative; }
+    aside .asideWrapper .asideImage {
+      position: absolute;
+      top: -25px;
+      width: 513px; }
+      aside .asideWrapper .asideImage img {
+        -o-object-fit: cover;
+        object-fit: cover; }
 
 .asideContainer {
-  float: left;
+  height: 94vh;
+  margin-left: 28%;
+  padding: 420px 10% 0 5%;
+  width: 100%;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,6 +864,35 @@ aside {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.asideText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .asideText .blogAboutPlanted {
+    padding-bottom: 25px; }
+  .asideText h3 {
+    text-transform: capitalize; }
+  .asideText span a {
+    font-style: italic;
+    color: #074115;
+    font-weight: 700; }
+  .asideText .recentPosts ul {
+    line-height: 32px; }
+    .asideText .recentPosts ul li::before {
+      color: #074115;
+      content: "\2022";
+      font-size: 1em;
+      position: relative;
+      top: 0;
+      left: -35px; }
+
+aside nav a {
+  color: black; }
 
 .contact {
   background-image: url("../assets/contactHeader.jpg");
