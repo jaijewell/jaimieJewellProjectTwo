@@ -726,6 +726,15 @@ footer {
       line-height: 92px;
       margin: 0; }
 
+@media (max-width: 900px) {
+  header {
+    -webkit-box-ordinal-group: -1;
+    -ms-flex-order: -2;
+    order: -2; }
+  .blogHeader .blogTitle {
+    margin: 0;
+    padding-left: 5%; } }
+
 body {
   background-color: #f0efed; }
 
@@ -764,12 +773,52 @@ body {
       color: #074115;
       font-style: italic; }
 
+@media (max-width: 900px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .blogContent {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .blogContent {
+    float: none;
+    width: 100%;
+    padding: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .blogContent .textContainer {
+    width: 100%;
+    padding: 0;
+    border: none; }
+  .blogContent .blogImage {
+    display: none; } }
+
 .commentsContainer {
   width: 75%;
-  padding: 5% 5% 10% 5%;
+  padding: 2% 5% 10% 5%;
   float: left; }
+  .commentsContainer .commentsTitle {
+    letter-spacing: 1.3px; }
   .commentsContainer .profileContainer {
-    height: 50vh;
+    padding-top: 2%;
+    min-height: 50vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -786,7 +835,8 @@ body {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-bottom: 10%; }
     .commentsContainer figure .profileImage {
       width: 20%; }
       .commentsContainer figure .profileImage img {
@@ -803,6 +853,11 @@ body {
         margin: 0; }
       .commentsContainer figure figcaption p {
         margin: 0; }
+
+@media (max-width: 900px) {
+  .commentsContainer {
+    padding: 0;
+    width: 100%; } }
 
 .blogFormContainer {
   float: left;
@@ -837,26 +892,30 @@ body {
   .blogFormContainer textarea {
     background-color: #f0efed; }
 
+@media (max-width: 900px) {
+  .blogFormContainer {
+    float: none;
+    width: 100%; } }
+
 aside {
   margin-top: 8%;
-  width: 25%;
-  color: black; }
-  aside .asideWrapper {
-    position: relative; }
-    aside .asideWrapper .asideImage {
-      position: absolute;
+  min-height: 90vh;
+  width: 33%;
+  background: -webkit-gradient(linear, left top, right top, from(#f0efed), color-stop(25%, #f0efed), color-stop(25%, white));
+  background: -webkit-linear-gradient(left, #f0efed, #f0efed 25%, white 25% white 75%);
+  background: -o-linear-gradient(left, #f0efed, #f0efed 25%, white 25% white 75%);
+  background: linear-gradient(to right, #f0efed, #f0efed 25%, white 25% white 75%); }
+  aside .asideWrapper .asideImage {
+    max-width: 513px;
+    max-height: 433px; }
+    aside .asideWrapper .asideImage img {
+      width: 100%;
+      position: relative;
       top: -25px;
-      width: 513px; }
-      aside .asideWrapper .asideImage img {
-        -o-object-fit: cover;
-        object-fit: cover; }
+      left: 0; }
 
 .asideContainer {
-  height: 94vh;
-  margin-left: 28%;
-  padding: 420px 10% 0 5%;
-  width: 100%;
-  background-color: white;
+  padding: 0 5% 0 28%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,7 +935,8 @@ aside {
   .asideText .blogAboutPlanted {
     padding-bottom: 25px; }
   .asideText h3 {
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    margin: 0; }
   .asideText span a {
     font-style: italic;
     color: #074115;
@@ -884,15 +944,40 @@ aside {
   .asideText .recentPosts ul {
     line-height: 32px; }
     .asideText .recentPosts ul li::before {
-      color: #074115;
+      color: #0e902d;
       content: "\2022";
       font-size: 1em;
       position: relative;
       top: 0;
-      left: -35px; }
+      left: -25px; }
+    .asideText .recentPosts ul li a:hover {
+      color: #0e902d; }
 
 aside nav a {
   color: black; }
+
+@media (max-width: 1600px) {
+  aside {
+    background: white; }
+  .asideContainer {
+    padding-left: 5%; }
+  .recentPosts ul li a {
+    margin-left: -15px; } }
+
+@media (max-width: 1200px) {
+  aside {
+    min-height: 50vh !important; } }
+
+@media (max-width: 900px) {
+  aside {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    width: 100%;
+    margin: 0;
+    padding: 5%; }
+  .asideImage {
+    display: none; } }
 
 .contact {
   background-image: url("../assets/contactHeader.jpg");

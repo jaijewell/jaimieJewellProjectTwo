@@ -11,7 +11,6 @@ body {
         flex-direction: column;
     }
     
-
     .blogImage {
         box-shadow: $boxShadowLeft;
         margin-left: 20px;
@@ -43,6 +42,39 @@ body {
             // border: 2px solid tomato;
         }
     } 
+
+} //blogMain styling ends here
+
+//media queries begin here
+@include tabletLandscape-down {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: space
+    }
+    .blogContent {
+        order: 2;
+    }
+    .blogContent {
+        float: none;
+        width: 100%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .blogContent .textContainer {
+         width: 100%;
+         padding: 0;
+         border: none;
+     }
+    
+    .blogContent .blogImage {
+        display: none;
+    }
 
 }
 

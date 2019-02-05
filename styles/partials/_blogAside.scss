@@ -1,51 +1,41 @@
 aside {
     margin-top: 8%;
-    width: 25%;
-    color: black;
-    // border: 2px solid tomato;
-    // background-color: $secondaryColour;
-    
-
+    min-height: 90vh;
+    width: 33%;
+    background: 
+        linear-gradient(
+            to right, 
+            $primaryColour,
+            $primaryColour 25%,
+            $secondaryColour 25%
+            $secondaryColour 75%
+            );
 
     .asideWrapper {
-        position: relative;
         .asideImage {
-            position: absolute;
-            top: -25px;
-           
-            width: 513px;
+            max-width: 513px;
+            max-height: 433px;
             
-
             img {
-                object-fit: cover;
-                
-                
+                width: 100%;
+                position: relative;
+                top: -25px;
+                left: 0;
             }
         }
     }  
 }
 
-
 .asideContainer {
-    height: 94vh;
-    margin-left: 28%;
-    padding: 420px 10% 0 5% ;
-    width: 100%;
-    background-color: $secondaryColour;
+    
+    padding: 0 5% 0 28%;
     display: flex;
     flex-direction: column;
-    // position: absolute;
-    // top: 0px;
-    // right: -200px;
-  
 }
 
-
 .asideText {
-    // float: left;
     display: flex;
     flex-direction: column;
-    // border: 2px solid skyblue;
 
     .blogAboutPlanted {
     padding-bottom: 25px;
@@ -53,6 +43,7 @@ aside {
 
     h3 {
         text-transform: capitalize;
+        margin: 0;
     }
 
     span a {
@@ -67,28 +58,76 @@ aside {
             
             li {
                 &::before {
-                    color:$tertiaryAccent; 
+                    color:$secondaryAccent; 
                     content: "\2022"; 
                     font-size: 1em; 
                     position: relative;
                     top: 0; 
-                    left: -35px;
-                //idea from LockDown Design https://www.lockedownseo.com/change-the-bullet-color-of-a-list-item-with-css/ because for some reason my bullets wouldn't display, even using the !important feature - the only other location that I styled lis as list-style-type:none was in my global stylesheet.
+                    left: -25px;
+                //idea from LockDown Design https://www.lockedownseo.com/change-the-bullet-color-of-a-list-item-with-css/ because for some reason my bullets wouldn't display, even using the !important feature - the only other location that I styled lis as list-style-type:none was in my global stylesheet. 
                 }
-            }
-        } 
+
+                a:hover {
+                    color: $secondaryAccent;
+                }
+            } //li ends here
+        } //ul ends here 
+    } //recentPosts ends here
+} //aside Text ends here
+
+aside nav a {
+    color: black;   
+} 
+
+//aside styling ends here
+
+//media queries begin here
+
+
+//media query for 1366
+
+
+@include bigDesktop-down {
+    aside { 
+        background: $secondaryColour;
+    }
+
+    .asideContainer {
+        padding-left: 5%;
+    }
+
+    .recentPosts ul li a {
+        margin-left: -15px;
+    }
+
+    // .recentPosts ul li::before {
+    //     left: -5px;
+    // }
+}
+
+@include desktop-down {
+        aside {
+            min-height: 50vh !important;
+        }
+    }
+
+@include tabletLandscape-down {
+    aside {
+        order: -1;
+        width: 100%;
+        margin: 0;
+        padding: 5%;
+        
+    }
+
+    .asideImage {
+        display: none;
     }
 }
 
-aside nav {
-    // border: 2px solid green;
-    
+@include phone {
+
+
 }
 
-aside nav a {
-    color: black;
-    // border: 2px solid pink;
-    
-}
 
-// have to style UL

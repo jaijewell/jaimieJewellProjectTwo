@@ -23,4 +23,11 @@
     textarea {
         background-color: $primaryColour;
     }
+ } //blogFormContainer styling ends here
+
+ @include tabletLandscape-down {
+    .blogFormContainer {
+        float: none;
+        width: 100%;
+    }
  }

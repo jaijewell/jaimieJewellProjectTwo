@@ -1,20 +1,24 @@
 .commentsContainer {
     width: 75%;
-    padding: 5% 5% 10% 5%;
+    padding: 2% 5% 10% 5%;
     float: left;
     
+    .commentsTitle {
+        letter-spacing: $primaryLetterSpacing;
+    }
     
     .profileContainer {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+        padding-top: 2%;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     figure {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 10%;
 
         .profileImage {
             width: 20%;
@@ -40,7 +44,17 @@
                 margin: 0;
             }
         
-        }
+        } //figcaption styling ends here
+    } //figure styling ends here  
+}//commentsContainer styling ends here
+
+
+@include tabletLandscape-down {
+    .commentsContainer {
+        padding: 0;
+        width: 100%;
     }
+
 }
+
 
