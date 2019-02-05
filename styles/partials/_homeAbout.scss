@@ -52,7 +52,8 @@
     }   
 }
 
-@media(max-width: 450px) {
+// @media(max-width: 450px)
+@include phone {
     .aboutPlanted { 
         height: 100vh;
          

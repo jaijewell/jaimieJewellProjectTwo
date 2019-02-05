@@ -1,62 +1,87 @@
 .connect {
-    height: 75vh;
+    width: 80%;
+    min-height: 75vh;
     background-color: $primaryColour;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 5% 13% 5% 13%;
-    margin: 0;
+    padding: 5% 0 5% 0;
+    margin: 0 10%;
 
     .connectItems {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
     }
 
     .connectItem {
-    display: flex;
+    // display: flex;
+    // justify-content: space-between;
     position: relative;
-    padding-right: 25px;
-// general stylying for all before elements
-        &::before {
-            content:'';
-            background-color: $primaryAccent;
-            width: 30px;
-            height: 20px;
-            border-radius: 50%;
-            padding: 2%;
-            align-items: center;
-            justify-content: space-between;
-            position: absolute;
-            top: 15px;
-            left: -10px;
-        }
     }
     
     .icon {
-        width: 100px;
-        height: 70px;
+        // border: 2px solid red;
+        width: 35px;
+        height: 35px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-right: 25px;
+        background: $primaryAccent;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: -60px;
 
         i {
-            z-index: 50;
-            @include fontSize(35);
-           
-
+            @include fontSize(25);
         }
     }
 
-    //  .icon .fa-users {
-    //     left: -2px;
-    // }
-    // .icon .fa-file {
-    //     left: 5px;
-    // }
+    .icon .fa-leaf,
+    .icon .fa-users {
+        padding-left: 5px;
+    }
+
+    .icon .fa-phone {
+        padding-left: 7px;
+    }
   
+    .icon .fa-file {
+        padding-left: 10px;
+    }
+  
+    .connectText {
+        width: 80%;
+    }
     .connectText h3,
     .connectText p {
         color: $black;
         line-height: $primaryLineHeight;
     }
-}   
+} // connect styling
+
+//media queries begin here
+@include  desktopSmall {
+    .connect {
+        flex-wrap: nowrap;
+        
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .connect .connectItems {
+        grid-template-rows: 150px 150px;
+    }
+}
+
+@include  tablet {
+     .connect .connectItems {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px;
+    }
+}
+
+

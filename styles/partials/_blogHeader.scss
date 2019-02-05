@@ -35,10 +35,9 @@
 
 //media queries begin here
 
-@include tabletLandscape-down {
+@include tabletLarge {
     header {
         order: -2;
-    
     }
     .blogHeader .blogTitle {
         margin: 0;

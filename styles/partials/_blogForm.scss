@@ -25,7 +25,7 @@
     }
  } //blogFormContainer styling ends here
 
- @include tabletLandscape-down {
+ @include tabletLarge {
     .blogFormContainer {
         float: none;
         width: 100%;

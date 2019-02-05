@@ -46,12 +46,11 @@ body {
 } //blogMain styling ends here
 
 //media queries begin here
-@include tabletLandscape-down {
+@include tabletLarge {
     body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: space
     }
     .blogContent {
         order: 2;
@@ -62,8 +61,7 @@ body {
         padding: 5%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-       
+        justify-content: center; 
     }
 
     .blogContent .textContainer {
@@ -75,7 +73,6 @@ body {
     .blogContent .blogImage {
         display: none;
     }
-
 }
 
    

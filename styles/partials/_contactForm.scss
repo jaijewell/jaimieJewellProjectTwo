@@ -71,7 +71,8 @@
 }
 
 // media queries begin
-@media(max-width: 1186px) {
+// @media(max-width: 1186px)
+@include desktopSmall {
      .formContainer {
         position: static !important;  
     }
@@ -87,7 +88,9 @@
     }
 } //1186 media query ends here
 
-@media(max-width: 700px) {
+// @media(max-width: 700px)
+
+@include tabletLarge  {
      .formContainer {
         width: 85%;  
     }

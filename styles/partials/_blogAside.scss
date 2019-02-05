@@ -77,16 +77,9 @@ aside {
 
 aside nav a {
     color: black;   
-} 
-
-//aside styling ends here
+} //aside styling ends here
 
 //media queries begin here
-
-
-//media query for 1366
-
-
 @include bigDesktop-down {
     aside { 
         background: $secondaryColour;
@@ -99,35 +92,45 @@ aside nav a {
     .recentPosts ul li a {
         margin-left: -15px;
     }
-
-    // .recentPosts ul li::before {
-    //     left: -5px;
-    // }
 }
 
-@include desktop-down {
-        aside {
-            min-height: 50vh !important;
-        }
+@include desktopSmall {
+    aside {
+        min-height: 50vh !important;
     }
 
-@include tabletLandscape-down {
+    .recentPosts ul {
+        padding: 0;
+    }
+    .recentPosts ul li a {
+        margin-left: 10px;
+        @include fontSize(16);
+    }
+    .recentPosts ul li::before {            
+        left: 0 !important;
+    }
+}
+
+@include tabletLarge {
     aside {
         order: -1;
         width: 100%;
         margin: 0;
-        padding: 5%;
-        
+        padding: 5%;  
     }
 
     .asideImage {
         display: none;
     }
+    .recentPosts ul li a {
+        @include fontSize(20);
+    }
 }
 
 @include phone {
-
-
+     .recentPosts ul li a {
+        @include fontSize(17);
+    }
 }
 
 

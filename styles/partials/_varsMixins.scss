@@ -25,19 +25,19 @@ $boxShadowLeft: -20px 20px $primaryAccent;
 
 
 //media query mixins
- @mixin bigDesktop-down {
+ @mixin desktopLarge {
    @media (max-width: 1600px) {@content};
  }
 
- @mixin desktop-down {
+ @mixin desktopSmall {
    @media (max-width: 1200px) {@content};
  }
 
- @mixin tabletLandscape-down {
+ @mixin tabletLarge {
    @media(max-width: 900px) {@content};
  }
 
-  @mixin tabletPortrait-down {
+  @mixin tabletSmall {
    @media(max-width: 600px) {@content};
  }
 

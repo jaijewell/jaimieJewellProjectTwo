@@ -10,12 +10,10 @@ header {
         height: 60px;
         display: flex;
         align-items: center;
-        // border: 2px solid yellow;
     
         .logo {
             flex: 0 0 10%;
              padding-right: 2%;
-            // border: 2px solid pink;
             
             h2 {
                 font-weight: 400;
@@ -23,32 +21,33 @@ header {
                 margin: 0;
             }
         }
-        
-        ul {
-            display: flex;
-            margin: 0; 
-            padding: 0;
-            flex:1 0;
-            // border: 2px solid turquoise;
-
-            li {
-                flex: 0 0 10%;
-                text-align: center;
-                text-transform: uppercase;
-                letter-spacing: $secondaryLetterSpacing;
-                font-weight: 700;
-                @include fontSize(24);
-
-                a:hover {
-                    color: $primaryAccent;
-                }
-            }
-        }
-
     }
 }
+        
+ header .topBar ul {
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    flex:1 0;
     
-@media(max-width: 930px) {
+    li {
+        flex: 0 0 10%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: $secondaryLetterSpacing;
+        font-weight: 700;
+        @include fontSize(24);
+
+        a:hover {
+            color: $primaryAccent;
+        }
+    }
+}
+//header styling ends here
+//media queries begin here   
+    
+// @media(max-width: 930px)
+ @include tabletLarge {
     header {
         .logo {
             flex: 0 0 100%;
