@@ -57,7 +57,6 @@
     .contact .contactTitle {
         margin: 0;
         padding-top: 25%;
-        // padding-bottom: 25%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -79,9 +78,11 @@
 @include phone {
     .contact .contactTitle h1 {
         @include fontSize(60);
+        margin: 40px 0;
     }
 
     .contact {
+        height: 80vh;
         .topBar {
             background: none;
         }

@@ -1247,9 +1247,12 @@ aside nav a {
 @media (max-width: 480px) {
   .contact .contactTitle h1 {
     font-size: 60px;
-    font-size: 3rem; }
-  .contact .topBar {
-    background: none; } }
+    font-size: 3rem;
+    margin: 40px 0; }
+  .contact {
+    height: 80vh; }
+    .contact .topBar {
+      background: none; } }
 
 .headerContent {
   position: relative;
