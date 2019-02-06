@@ -90,6 +90,15 @@
     .founderText {
         height: inherit;
     }
+}
+
+@include phone {
+    .founderContainer {
+        height: 60vh;
+    }
+    .founderText {
+        height: inherit;
+    }
 
 
 }

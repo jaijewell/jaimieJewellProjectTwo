@@ -141,12 +141,15 @@
         }
     }
         
-    .plantedArticles button {
-            width: 40%;
+    .plantedArticles  {
+        .readMore {
+            width: 100%;
+        
 
             a {
                 @include fontSize(18);
             }
+        }
     }
 }
 

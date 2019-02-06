@@ -3,3 +3,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+@include phone {
+    .galleryContainer {
+        display: none;
+    }
+}
