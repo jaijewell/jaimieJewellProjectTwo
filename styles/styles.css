@@ -1064,6 +1064,13 @@ body {
     float: none;
     width: 100%; } }
 
+@media (max-width: 300px) {
+  .blogFormContainer input[type="text"],
+  .blogFormContainer input[type="email"] {
+    padding-left: 0;
+    font-size: 20px;
+    font-size: 1rem; } }
+
 aside {
   margin-top: 8%;
   min-height: 90vh;

@@ -31,3 +31,13 @@
         width: 100%;
     }
 } //tabletLarge styling ends here
+
+@media(max-width: 300px) {
+    .blogFormContainer {
+        input[type="text"],
+        input[type="email"] {
+            padding-left: 0;
+            @include fontSize(20);
+        } 
+    }
+} //300px media query ends here
