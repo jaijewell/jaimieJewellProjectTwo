@@ -39,8 +39,27 @@
     header {
         order: -2;
     }
+
+    .blogHeader {
+        height: 40vh;
+
+        .blogTitle h1 {
+            @include fontSize(100);
+            padding-left: 0;
+        }
+    }
+
+
     .blogHeader .blogTitle {
         margin: 0;
         padding-left: 5%;
     }
+}
+@include phone {
+    .blogHeader {
+        .topBar {
+            background:none;
+        }
+    }
+    
 }

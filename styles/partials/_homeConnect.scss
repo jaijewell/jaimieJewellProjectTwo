@@ -77,10 +77,24 @@
     }
 }
 
-@include  tablet {
-     .connect .connectItems {
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px;
+@include  tabletLarge {
+     .connect {
+        padding: 0 0 10% 0;
+        width: 90%;
+        margin: 0 5%;
+        
+        .connectText {
+            width: 100%;
+        }
+        .connectItems {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .icon {
+                display: none;
+            }
+        }
     }
 }
 

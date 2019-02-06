@@ -15,23 +15,29 @@
 <body>
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <header class="headerWrapper">
-        <nav class="topBar">
+        <div class="topBar"> 
             <div class="logo">
                 <h2>Planted</h2>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <button class="hamburger"><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Click to retrieve navigation</span></button>
+            <nav class="siteNav">
+                <ul class="menu">
+                    <li class="exitResponsive"><i class="fas fa-times" aria-hidden="true"></i><span class="sr-only">Click to exit navigation</span></li>
+                    <li><a href="#home" class="homeItem"
+                        >Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="homeTitle">
             <h1>Planted <span>Invitation</span></h1>
         </div>
         <div class="headerImageContainer">
             <!-- empty div for HeaderBox Image -->
         </div>
+        
         
     </header>
     <main id="maincontent">
@@ -72,25 +78,24 @@
                 </div>
            </article>
         </section>
-        <section class="connect">
-
-            <!-- put this entire thing in an a tag - the entire div's contents add aria true to the icon -  -->
-            
+        <section class="connect">            
             <div class="connectItems rowOne">
                 <div class="connectItem locationsLink">
                     <div class="icon">     
-                        <i class="fas fa-leaf"></i>
-                        </div>
+                        <i class="fas fa-leaf" aria-hidden="true"></i><span class="sr-only">Click to obtain list of locations</span>
+                    </div>
                     <div class="connectText locationText">
                         <h3>Green Houses</h3>
                         <p>You may have killed her when you shoved all those dollar bills down her throat, you may have killed her when you hit her with the stool... I don't know, I'm not a doctor. But I'll tell you what didn't kill her... smoking!
                         </p>
                     </div>
                 </div>
-                <!-- put this entire thing in an a tag - the entire div's contents add aria true to the icon -  -->
+              
                 <div class="connectItem communityLink">
+                    <div class="iconWrapper">
                     <div class="icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-users" aria-hidden="true"></i><span class="sr-only">Click to learn how you can become involved</span>
+                    </div>
                     </div>
                     <div class="connectText">
                         <h3>Community</h3>
@@ -98,33 +103,27 @@
                     </div>
                 </div>
             </div>
-            <!-- put this entire thing in an a tag - the entire div's contents add aria true to the icon -  -->
             <div class="connectItems rowTwo">
                 <div class="connectItem homeBlogLink">
                     <div class="icon">
-                        <i class="fas fa-file"></i>
+                        <i class="fas fa-file" aria-hidden="true"></i><span class="sr-only">Click to read more of our blog</span>
                     </div>
                     <div class="connectText">
                         <a href="./blog.html">
                             <h3>Blog</h3>  
-                            <p>I have been paid millions to endorse these butt-ugly shoes.Oh Bart, don't worry, people die all the time. In fact, you could wake up dead tomorrow.
-                            I look like cable T.V..You failed, Seymour. What is it with you and failure?
-
-</p>
+                            <p>I have been paid millions to endorse these butt-ugly shoes.Oh Bart, don't worry, people die all the time. In fact, you could wake up dead tomorrow. I look like cable T.V..You failed, Seymour. What is it with you and failure?</p>
                         </a>
                     </div>
                 </div>
-                <!-- put this entire thing in an a tag - the entire div's contents add aria true to the icon -  -->
                 <div class="connectItem homeContactLink">
                     <div class="icon">
-                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-phone" aria-hidden="true"></i><span class="sr-only">Click to obtain all of our contact information</span>
                     </div>
                     <div class="connectText">
                         <a href="./contact.html">
                             <h3>Get in Touch</h3>
                             <p>  Mr. So what you're saying is, I'm indestructible. Oh, no, no, in fact, even
-                            slight breeze could...Indestructible. I always knew you had personality. The doctor said it was hyperactivity, but I knew better.
-</p>
+                            slight breeze could...Indestructible. I always knew you had personality. The doctor said it was hyperactivity, but I knew better. </p>
                         </a>
                     </div>
                 </div>
@@ -145,7 +144,7 @@
                     <p>Hexagon tote bag poutine live-edge. Unicorn mlkshk prism, la croix pork belly sriracha vegan bicycle rights chambray
                     godard cray. Pinterest blue bottle activated charcoal XOXO austin neutra iceland PBR&B kogi retro freegan microdosing
                     messenger bag wayfarers. Live-edge pug four loko letterpress. Brooklyn blog four dollar toast aesthetic, microdosing
-                    lumbersexual copper mug pabst pitchfork cliche small batch.Sartorial authentic gastropub, DIY farm-to-table VHS deep v polaroid sriracha yuccie.</p>
+                    lumbersexual copper mug pabst pitchfor.</p>
                     <button class="findOut"><a href="#">Find out more</a></button>
                 </div>
             </div>
@@ -159,5 +158,17 @@
     <footer>
         <p>Copyright &copy 2018 HackerYou</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').on('click', function () {
+                $('.siteNav').toggleClass('show');
+            });
+
+            $('.exitResponsive').on('click', function () {
+                $('.siteNav').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>

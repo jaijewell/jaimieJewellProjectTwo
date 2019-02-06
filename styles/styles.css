@@ -273,7 +273,7 @@ header {
   flex-direction: column; }
   header .homeTitle {
     z-index: 20;
-    height: calc(100% - 90px);
+    height: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -317,6 +317,13 @@ header {
       font-size: 80px;
       font-size: 4rem; } }
 
+header .hamburger,
+header .exitResponsive {
+  display: none; }
+
+header .show.siteNav {
+  display: block; }
+
 header .headerWrapper {
   margin: 0;
   font-family: "Josefin Sans", sans-serif; }
@@ -338,35 +345,103 @@ header .topBar {
     header .topBar .logo h2 {
       font-weight: 400;
       margin: 0; }
-  header .topBar ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0;
-    flex: 1 0; }
-    header .topBar ul li {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 10%;
-      flex: 0 0 10%;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 700;
-      font-size: 24px;
-      font-size: 1.2rem; }
-      header .topBar ul li a:hover {
-        color: #f8e71c; }
+  header .topBar nav {
+    width: 35%; }
 
-@media (max-width: 930px) {
-  header .logo {
+header .topBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0;
+  flex: 1 0; }
+  header .topBar ul li {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%; }
-  header .topBar ul {
-    display: none; } }
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 24px;
+    font-size: 1.2rem; }
+  header .topBar ul .homeItem {
+    color: #f8e71c; }
+    header .topBar ul .homeItem:hover {
+      color: white; }
+  header .topBar ul li a:hover {
+    color: #f8e71c; }
+
+@media (max-width: 1200px) {
+  header .logo {
+    display: none; }
+  header .topBar nav {
+    width: 100%; } }
+
+@media (max-width: 480px) {
+  header .topBar {
+    padding: 0; }
+  header .hamburger {
+    padding: 10% 10% 0 0;
+    text-align: right;
+    background: none; }
+    header .hamburger i {
+      font-size: 60px;
+      font-size: 3rem;
+      color: #f8e71c;
+      padding-top: 5%; }
+  header .exitResponsive i {
+    font-size: 50px;
+    font-size: 2.5rem;
+    color: #f8e71c;
+    position: absolute;
+    top: 5px;
+    left: 5px; }
+  header .exitResponsive,
+  header .hamburger {
+    width: 100%;
+    display: block;
+    padding-top: 2%; }
+  .menu {
+    position: relative; }
+  header .siteNav {
+    z-index: 100;
+    margin: 0;
+    display: none;
+    height: 100vh;
+    width: 20vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #074115; }
+    header .siteNav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: inherit; }
+  .siteNav li {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%; }
+    .siteNav li a {
+      font-size: 48px;
+      font-size: 2.4rem;
+      text-align: center;
+      width: 100%;
+      padding: 25px;
+      color: #f8e71c; }
+      .siteNav li a:hover {
+        color: white; } }
 
 .aboutPlanted {
   background-color: #f0efed;
@@ -405,16 +480,16 @@ header .topBar {
       font-size: 18px;
       font-size: 0.9rem; } }
 
-@media (max-width: 585px) {
+@media (max-width: 600px) {
   .aboutPlanted {
     height: 90vh; }
-    .aboutPlanted button {
-      width: 35%; }
-      .aboutPlanted button a {
-        font-size: 16px;
-        font-size: 0.8rem; } }
+  .aboutPlanted button {
+    width: 35%; }
+    .aboutPlanted button a {
+      font-size: 16px;
+      font-size: 0.8rem; } }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .aboutPlanted {
     height: 100vh; }
     .aboutPlanted button {
@@ -616,6 +691,25 @@ header .topBar {
     -ms-grid-rows: 150px 150px;
     grid-template-rows: 150px 150px; } }
 
+@media (max-width: 900px) {
+  .connect {
+    padding: 0 0 10% 0;
+    width: 90%;
+    margin: 0 5%; }
+    .connect .connectText {
+      width: 100%; }
+    .connect .connectItems {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center; }
+      .connect .connectItems .icon {
+        display: none; } }
+
 .banner {
   background-image: url("../assets/homeBanner.jpg");
   background-repeat: no-repeat;
@@ -663,7 +757,7 @@ header .topBar {
     .founderContainer .founderContent .founderImage img {
       display: block; }
     .founderContainer .founderContent .founderText {
-      height: 304px;
+      min-height: 304px;
       width: 70%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -680,12 +774,45 @@ header .topBar {
         margin: 0;
         letter-spacing: 1px; }
       .founderContainer .founderContent .founderText p {
-        padding: 2.5% 0;
+        padding: 2.5% 0 5% 0;
         margin: 0; }
       .founderContainer .founderContent .founderText button {
         margin: 2% 0 0 0;
         position: absolute;
         bottom: -20px; }
+
+@media (max-width: 1200px) {
+  .founderContainer .founderContent {
+    margin: 0 5%; }
+    .founderContainer .founderContent button {
+      width: 50%; } }
+
+@media (max-width: 900px) {
+  .founderContainer {
+    height: 80vh;
+    margin: 10% 0%; }
+    .founderContainer .founderContent {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .founderContainer .founderContent .founderText {
+        padding: 10% 0 0 0;
+        width: 100%;
+        text-align: center; }
+        .founderContainer .founderContent .founderText button {
+          width: 100%; } }
+
+@media (max-width: 600px) {
+  .founderImage {
+    display: none; }
+  .founderContainer {
+    height: 50vh; }
+  .founderText {
+    height: inherit; } }
 
 .galleryContainer {
   margin: 5% 10%;
@@ -744,9 +871,19 @@ footer {
     -webkit-box-ordinal-group: -1;
     -ms-flex-order: -2;
     order: -2; }
+  .blogHeader {
+    height: 40vh; }
+    .blogHeader .blogTitle h1 {
+      font-size: 100px;
+      font-size: 5rem;
+      padding-left: 0; }
   .blogHeader .blogTitle {
     margin: 0;
     padding-left: 5%; } }
+
+@media (max-width: 480px) {
+  .blogHeader .topBar {
+    background: none; } }
 
 body {
   background-color: #f0efed; }
@@ -979,7 +1116,7 @@ aside nav a {
 
 @media (max-width: 1200px) {
   aside {
-    min-height: 50vh !important; }
+    min-height: 45vh !important; }
   .recentPosts ul {
     padding: 0; }
   .recentPosts ul li a {
@@ -1040,7 +1177,7 @@ aside nav a {
       -ms-flex-align: center;
       align-items: center; }
 
-@media (max-width: 1186px) {
+@media (max-width: 1200px) {
   .contact {
     height: 70vh;
     display: -webkit-box;
@@ -1054,8 +1191,6 @@ aside nav a {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
-  .contact .topBar ul {
-    display: none; }
   .headerContent {
     position: static !important;
     display: -webkit-box;
@@ -1087,15 +1222,17 @@ aside nav a {
   .formContainer {
     position: static !important; } }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .contact .contactTitle h1 {
     font-size: 65px;
     font-size: 3.25rem; } }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .contact .contactTitle h1 {
     font-size: 50px;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .contact .topBar {
+    background: none; } }
 
 .headerContent {
   position: relative;
@@ -1137,7 +1274,7 @@ aside nav a {
       -ms-flex-pack: justify;
       justify-content: space-between; }
 
-@media (max-width: 1186px) {
+@media (max-width: 1200px) {
   .formContainer {
     position: static !important; }
   .formContainer .contactForm .topForm {
@@ -1152,7 +1289,7 @@ aside nav a {
   .formContainer input[type="email"] {
     width: 100%; } }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .formContainer {
     width: 85%; } }
 
@@ -1192,7 +1329,7 @@ aside nav a {
     font-size: 1.5rem;
     padding: 10px 0; }
 
-@media (max-width: 1186px) {
+@media (max-width: 1200px) {
   .infoContainer {
     padding: 0;
     display: -webkit-box;

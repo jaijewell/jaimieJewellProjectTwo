@@ -13,32 +13,36 @@
 <body>
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <header class="contact headerWrapper">
-        <nav class="topBar">
+        <div class="topBar">
             <div class="logo">
                 <h2>Planted</h2>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li class="contactItem"><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <button class="hamburger"><i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Click to retrieve navigation</span></button>
+            <nav class="siteNav">
+                <ul class="menu">
+                    <li class="exitResponsive"><i class="fas fa-times" aria-hidden="true"></i><span class="sr-only">Click to exit navigation</span></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li class="contactItem"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="headerContent">
             <div class="contactTitle">
                 <h1>Get in Touch</h1>
             </div>
             <div class="formContainer">
                 <form action="" method="POST" class="contactForm" autocomplete="off" name="contact">
-                    <div class="topForm">
+                    <fieldset class="topForm">
                         <label class="visuallyhidden" for="firstName">Name</label>
-                        <input type="text" name="firstName" placeholder="Name" id="firstName">
+                        <input type="text" name="firstName" placeholder="Name" id="firstName" maxlength="50">
                         <label for="email" class="visuallyhidden">Email address</label>
-                        <input type="email" name="email" id="email" placeholder="Email address">
-                    </div>
+                        <input type="email" name="email" id="email" placeholder="Email address" maxlength="50">
+                    </fieldset>
                     <div class="message">
                         <label for="contact"></label>
-                        <textarea id="contact" name="contact" placeholder="Message" cols="30" rows="10"></textarea>
+                        <textarea id="contact" name="contact" placeholder="Message" cols="30" rows="10" maxlength="1000"></textarea>
                     </div>
                     <label for="submitMessage" class="visuallyhidden">Submit comment</label>
                     <input type="submit" id="submitMessage" value="Submit">
@@ -49,7 +53,7 @@
     <section id="maincontent" class="main">
         <div class="infoContainer">
             <div class="socialMediaIcons">
-                <nav class="socialMediaNav">
+                <div class="socialMediaNav">
                     <ul>
                         <li><a href="http://www.facebook.com"><i class="fab fa-facebook-f" aria-hidden="true"></i></a><span class="sr-only">Follow
                                 us on Facebook</span></li>
@@ -57,10 +61,10 @@
                                 us on Instagram</span></li>
                         <li><a href="http://www.twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a><span class="sr-only">Follow
                                 us on Twitter</span></li>
-                        <li><a href="http://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a><span class="sr-only">Follow
+                        <li><a href="http://www.whatsapp.com"><i class="fab fa-whatsapp" aria-hidden="true"></i></a><span class="sr-only">Follow
                             us on Whatsapp</span></li>
                     </ul>
-                </nav>
+                </div>
             </div>
             <div class="contactInfo">
                 <h3>info@email.com</h3>
@@ -73,5 +77,17 @@
     <footer>
         <p>Copyright &copy 2018 HackerYou</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').on('click', function () {
+                $('.siteNav').toggleClass('show');
+            });
+
+            $('.exitResponsive').on('click', function () {
+                $('.siteNav').toggleClass('show');
+            });
+        });
+    </script>
 </body>
 </html>

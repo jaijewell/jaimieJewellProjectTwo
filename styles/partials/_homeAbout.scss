@@ -37,20 +37,19 @@
         }
     }
 }
-
-@media(max-width: 585px) {
+// (max-width: 585px)
+@include tabletSmall {
     .aboutPlanted {
         height: 90vh;
-        
-        button {
+    }
+    .aboutPlanted button {
             width: 35%;
 
-            a {
-                @include fontSize(16);
-            }
+        a {
+            @include fontSize(16);
         }
-    }   
-}
+    }
+}   
 
 // @media(max-width: 450px)
 @include phone {

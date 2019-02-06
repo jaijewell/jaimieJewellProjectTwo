@@ -80,7 +80,7 @@ aside nav a {
 } //aside styling ends here
 
 //media queries begin here
-@include bigDesktop-down {
+@include desktopLarge {
     aside { 
         background: $secondaryColour;
     }
@@ -95,8 +95,9 @@ aside nav a {
 }
 
 @include desktopSmall {
+    
     aside {
-        min-height: 50vh !important;
+        min-height: 45vh !important;
     }
 
     .recentPosts ul {

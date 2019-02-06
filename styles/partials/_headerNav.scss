@@ -1,5 +1,14 @@
 header {
-    
+    //for functional hamburger menu
+    .hamburger,
+    .exitResponsive {
+        display: none;
+    }
+
+    .show.siteNav {
+	    display: block;
+    }  //hamburger default styling ends here
+
     .headerWrapper {
         margin: 0;
         font-family: $primaryFont;
@@ -17,15 +26,19 @@ header {
             
             h2 {
                 font-weight: 400;
-               
                 margin: 0;
             }
+        } //.logo styling ends here
+    
+        nav {
+            width: 35%;
         }
-    }
-}
+    } // topBar styling ends here
+} //header styling ends here
         
  header .topBar ul {
     display: flex;
+    justify-content: space-between;
     margin: 0; 
     padding: 0;
     flex:1 0;
@@ -37,28 +50,122 @@ header {
         letter-spacing: $secondaryLetterSpacing;
         font-weight: 700;
         @include fontSize(24);
+    }
 
-        a:hover {
-            color: $primaryAccent;
+    .homeItem  {
+        color: $primaryAccent;
+        
+        &:hover{
+            color: $secondaryColour;
         }
     }
+
+    li a:hover {
+        color: $primaryAccent;
+    }
+        
 }
 //header styling ends here
 //media queries begin here   
     
 // @media(max-width: 930px)
- @include tabletLarge {
+ @include desktopSmall {
     header {
         .logo {
-            flex: 0 0 100%;
-            
+            display: none
         } 
         .topBar {
-            ul {
-                display: none;
+            nav {
+                width: 100%;
             }
         }
 
     }
-}
+} //desktopSmall ends here
+
+//interactive nav dropdown
+@include phone {
+    header {
+        .topBar {
+            padding:0;
+        }
+
+    
+        .hamburger {
+            padding: 10% 10% 0 0;
+            text-align: right;
+            background:none;
+        
+            i {
+            @include fontSize(60);
+            color: $primaryAccent;
+            padding-top: 5%;
+            }
+        }
+
+        .exitResponsive i {
+            @include fontSize(50);
+            color: $primaryAccent;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .exitResponsive,
+        .hamburger {
+            width: 100%;
+            display: block;
+            padding-top: 2%;
+        }
+    } //header nest ends here
+
+    .menu {
+        position: relative;
+    }
+   
+
+	header .siteNav {
+        z-index: 100;
+        margin: 0;
+        display: none;
+        height: 100vh;
+        width: 20vw;
+		position: absolute;
+		top: 0;
+		right: 0;
+        background: rgba(7, 65, 21, 1);
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            height: inherit;
+        }
+
+	}
+
+    .siteNav li {
+        justify-content: space-between;
+        width: 100%;
+        
+        a {
+            @include fontSize(48)
+            text-align: center;
+            width: 100%;
+            padding: 25px;
+            color: $primaryAccent;
+        
+            &:hover {
+                color: $secondaryColour;
+            }
+        
+        } //.siteNav a tag styling ends here
+    
+    } //.siteNav li styling ends here
+} //media query ends here
+
+    
+
+
+
+
 

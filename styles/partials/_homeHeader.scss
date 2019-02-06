@@ -8,26 +8,24 @@ header {
     
     .homeTitle {
         z-index: 20;
-        height: calc(100% - 90px);
+        height: inherit;
         display: flex;
         justify-content: center;
         align-items: center;
         letter-spacing: $primaryLetterSpacing;
-        // border: 2px solid green;
         
         h1 {
             margin: 0;
             font-weight: 400;
-            // border: 2px solid white;
-            
         }
 
         span {
             display: block;
             text-transform: lowercase;
-            // border: 2px solid pink;
         }
-    }
+    } //homeTitle ends here
+
+    
     
   
     .headerImageContainer {
@@ -40,14 +38,13 @@ header {
         top: 25%;
         right: 0;
     }
-}
-@media(max-width: 930px) {
-    header {
-        // .headerImageContainer {
-        //     height: 75%;
-        // }
-    }   
-}
+} //header styling ends here
+
+//---media queries begin here 
+
+// @media(max-width: 930px) {
+
+// }
 @media(max-width: 580px) {
     header {
         .homeTitle h1 {
@@ -55,7 +52,7 @@ header {
         }
     }
 
-}
+} //580 ends here
 
 @media(max-width: 430px) {
     header {
@@ -71,5 +68,5 @@ header {
             @include fontSize(80)
         }
     }
-}
+} //430 ends here
 

@@ -2,9 +2,6 @@
     height: 60vh;
     background-color: $primaryColour;
     
-    
-
-
     .founderContent {
         height: inherit;
         margin: 0 10%;
@@ -13,8 +10,7 @@
         align-items: center;
     
         .founderImage {
-            box-shadow: 20px 20px $primaryAccent;
-            
+            box-shadow: 20px 20px $primaryAccent; 
         }
 
         .founderImage img {
@@ -22,16 +18,12 @@
         }
 
         .founderText {
-            
-            height: 304px;
+            min-height: 304px;
             width: 70%;
             display: flex;
             flex-direction: column;
-        // align-items: space-between;
-            // padding-top: 2.5%;
             padding-left: 5%;
-            position: relative;
-            
+            position: relative;        
              
             .founderTitle {
                 @include fontSize(42);
@@ -40,7 +32,7 @@
             }
 
             p {
-                padding: 2.5% 0;
+                padding: 2.5% 0 5% 0;
                 margin: 0;
             }
             
@@ -51,6 +43,53 @@
             }
         }
     }
-}
+} //founderContainer styling ends here
 
-// maybe make button full size? or change to floats?
+@include desktopSmall {
+    .founderContainer {
+        .founderContent {
+            margin: 0 5%;
+    
+                button {
+                    width: 50%
+                }
+            
+        }
+    }
+} //desktopSmall ends here
+
+@include tabletLarge {
+    .founderContainer {
+        height: 80vh;
+        margin: 10% 0%;
+        .founderContent {
+            flex-direction: column;
+            // width: 100%;
+            justify-content: center;
+
+            .founderText {
+                padding: 10% 0 0 0;
+                width: 100%;
+                text-align: center;
+
+                button {
+                   width: 100%
+                } //button
+            } //founderText
+        } //founderContent
+    } //founderContainer
+} //tabletLarge ends here
+
+@include tabletSmall {
+    .founderImage {
+        display: none;
+    }
+    .founderContainer {
+        height: 50vh;
+    }
+    .founderText {
+        height: inherit;
+    }
+
+
+}

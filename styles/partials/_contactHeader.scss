@@ -51,9 +51,6 @@
     .contact.logo {
         flex: 0 0 100%;
     } 
-    .contact .topBar ul {      
-        display: none;
-    }
     
     .headerContent {
         position: static !important;
@@ -90,4 +87,13 @@
     .contact .contactTitle h1 {
         @include fontSize(50);
     }
+
+    .contact {
+        .topBar {
+            background: none;
+        }
+    }
+    
 }
+
+

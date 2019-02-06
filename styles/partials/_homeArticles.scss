@@ -139,14 +139,15 @@
                 box-shadow: -20px 20px $primaryAccent;
             }
         }
+    }
         
-        button {
+    .plantedArticles button {
             width: 40%;
 
             a {
                 @include fontSize(18);
             }
-        }
     }
 }
+
 
