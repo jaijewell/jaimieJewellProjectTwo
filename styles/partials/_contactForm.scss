@@ -1,26 +1,13 @@
-
-// .formSection {
-//     display: flex;
-//     justify-content: flex-end;
-//     position: relative;
-//     top: -300px;
-//     right: 100px;
-//     z-index: 10px;
-// }
-
 .headerContent {
-    // display: flex;
-    // justify-content: space-around;
-    // align-items: flex-end;
     position: relative;
     height: 100%;
 }
+
 .formContainer {
     height: 55vh;
     width: 55%;
     background-color: $secondaryColour;
     box-shadow: $boxShadowRight;
-    // display: flex;
     position: absolute;
     bottom: -300px;
     right: 100px;
@@ -39,39 +26,10 @@
             flex-direction: row;
             justify-content: space-between;
         }
-    }
-
-    // input[type="text"],
-    // input[type="email"] {
-    //     padding-left: 20px;
-    //     width: 48%;
-    //     border-top: none;
-    //     border-left: none;
-    //     border-right: none;
-    //     border-bottom: 2px solid $secondaryAccent; 
-    // }
-
-    // textarea {
-    //     width: 100%;
-    //     resize: none;
-    //     padding: 3% 0 0 2%;
-    //     border: 2px solid $secondaryAccent;
-        
-
-    //     &::placeholder {
-    //       font-weight: 300; 
-          
-    //     }  
-    // }
-    
-    // input[type="submit"] {
-    //     width: 100%;
-    //     margin: 0;
-    // }
-}
+    } //.contactForm ends here
+} //.formContainer ends here
 
 // media queries begin
-// @media(max-width: 1186px)
 @include desktopSmall {
      .formContainer {
         position: static !important;  
@@ -86,22 +44,10 @@
     .formContainer input[type="email"] {
         width: 100%;
     }
-} //1186 media query ends here
-
-// @media(max-width: 700px)
+} //desktopSmall media query ends here
 
 @include tabletLarge  {
      .formContainer {
         width: 85%;  
     }
-
-    // .formContainer .contactForm .topForm {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-
-    // .formContainer input[type="text"],
-    // .formContainer input[type="email"] {
-    //     width: 100%;
-    // }
-} //1186 media query ends here
+} //.tabletLarge media query ends here

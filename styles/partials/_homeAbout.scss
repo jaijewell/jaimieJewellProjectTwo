@@ -24,7 +24,7 @@
     .aboutPlanted {
         height: 75vh;
     }
-}
+} //media query ends here
 
 @media(max-width: 760px) {
     .aboutPlanted {
@@ -36,12 +36,13 @@
             }
         }
     }
-}
-// (max-width: 585px)
+} //media query ends here
+
 @include tabletSmall {
     .aboutPlanted {
         height: 90vh;
     }
+
     .aboutPlanted button {
             width: 35%;
 
@@ -49,9 +50,8 @@
             @include fontSize(16);
         }
     }
-}   
+} // tabletSmall media query styling ends here   
 
-// @media(max-width: 450px)
 @include phone {
     .aboutPlanted { 
         height: 100vh;
@@ -64,4 +64,4 @@
             }
         }
     }
-}
+} // phone media query end here

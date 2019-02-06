@@ -4,7 +4,7 @@
     background-color: $primaryColour;
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
     
     .socialMediaIcons {
         width: 125px;
@@ -14,7 +14,7 @@
             display: flex;
             justify-content: space-between;
         }
-    }
+    } //.socialMediaIcons styling ends here
 
     ul li a {
         color: $secondaryAccent;
@@ -34,7 +34,6 @@
 } //.infoContainer styling ends here
 
 // media queries begin
-// @media(max-width: 1186px)
 @include desktopSmall {
     .infoContainer {
         padding: 0;
@@ -46,4 +45,4 @@
     .infoContainer .socialMediaIcons {
         width: 220px;
     }
-} //desktopSmall (1200px) ends here
+} //desktopSmall media query ends here

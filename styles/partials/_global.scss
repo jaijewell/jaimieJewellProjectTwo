@@ -53,8 +53,7 @@ textarea {
     width: 100%;
     resize: none;
     padding: 3% 0 0 2%;
-    border: 2px solid $secondaryAccent;
-    
+    border: 2px solid $secondaryAccent; 
 
     &::placeholder {
         font-weight: 300; 
@@ -72,10 +71,3 @@ textarea:focus,
 input[type="submit"]:focus {
     border: 2px solid $primaryAccent;
 }
-
-
-
-
-
-
-

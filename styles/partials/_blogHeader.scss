@@ -29,12 +29,10 @@
             line-height: 92px;
             margin: 0; 
         }
-    }
-   
+    } //blogTitle ends here
 } //.blogHeader styling ends here
 
 //media queries begin here
-
 @include tabletLarge {
     header {
         order: -2;
@@ -49,17 +47,16 @@
         }
     }
 
-
     .blogHeader .blogTitle {
         margin: 0;
         padding-left: 5%;
     }
-}
+} //tabletLarge media query ends here
+
 @include phone {
     .blogHeader {
         .topBar {
             background:none;
         }
-    }
-    
-}
+    } 
+} //phone media query ends here

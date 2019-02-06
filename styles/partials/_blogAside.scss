@@ -38,7 +38,7 @@ aside {
     flex-direction: column;
 
     .blogAboutPlanted {
-    padding-bottom: 25px;
+        padding-bottom: 25px;
     }
 
     h3 {
@@ -95,7 +95,6 @@ aside nav a {
 }
 
 @include desktopSmall {
-    
     aside {
         min-height: 45vh !important;
     }
@@ -110,7 +109,7 @@ aside nav a {
     .recentPosts ul li::before {            
         left: 0 !important;
     }
-}
+} //desktopSmall ends here
 
 @include tabletLarge {
     aside {
@@ -126,7 +125,7 @@ aside nav a {
     .recentPosts ul li a {
         @include fontSize(20);
     }
-}
+} //tabletLarge ends here
 
 @include phone {
      .recentPosts ul li a {

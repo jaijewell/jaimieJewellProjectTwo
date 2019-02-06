@@ -64,12 +64,10 @@ header {
         color: $primaryAccent;
     }
         
-}
-//header styling ends here
-//media queries begin here   
-    
-// @media(max-width: 930px)
- @include desktopSmall {
+} //header styling ends here
+
+//media queries begin here       
+@include desktopSmall {
     header {
         .logo {
             display: none
@@ -79,18 +77,16 @@ header {
                 width: 100%;
             }
         }
-
     }
 } //desktopSmall ends here
 
-//interactive nav dropdown
+//interactive nav dropdown for phone media query begins here
 @include phone {
     header {
         .topBar {
             padding:0;
         }
 
-    
         .hamburger {
             padding: 10% 10% 0 0;
             text-align: right;
@@ -122,7 +118,6 @@ header {
     .menu {
         position: relative;
     }
-   
 
 	header .siteNav {
         z-index: 100;
@@ -140,8 +135,7 @@ header {
             flex-direction: column;
             height: inherit;
         }
-
-	}
+	} //siteNav nest ends here
 
     .siteNav li {
         justify-content: space-between;
@@ -157,11 +151,9 @@ header {
             &:hover {
                 color: $secondaryColour;
             }
-        
         } //.siteNav a tag styling ends here
-    
     } //.siteNav li styling ends here
-} //media query ends here
+} //.phone media query ends here
 
     
 

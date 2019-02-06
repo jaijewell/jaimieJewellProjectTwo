@@ -1,11 +1,11 @@
 body {
     background-color: $primaryColour;
 }
+
 .blogContent {
     float: right;
     width: 60%;
     
-   
     .blogContainer {
         display: flex;
         flex-direction: column;
@@ -21,7 +21,7 @@ body {
             display: block;
             width: 100%;
         }
-    }
+    } //blogImage styling ends here
 
     .textContainer { 
         border-left: 5px solid $primaryAccent;
@@ -39,10 +39,8 @@ body {
             padding-bottom: 5%;
             color: $tertiaryAccent;
             font-style: italic;
-            // border: 2px solid tomato;
         }
-    } 
-
+    } // textContainer styling ends here
 } //blogMain styling ends here
 
 //media queries begin here
@@ -52,9 +50,11 @@ body {
         flex-direction: column;
         justify-content: center;
     }
+
     .blogContent {
         order: 2;
     }
+
     .blogContent {
         float: none;
         width: 100%;
@@ -73,7 +73,7 @@ body {
     .blogContent .blogImage {
         display: none;
     }
-}
+} //tabletLarge mediaquery ends here
 
    
     

@@ -24,9 +24,6 @@ header {
             text-transform: lowercase;
         }
     } //homeTitle ends here
-
-    
-    
   
     .headerImageContainer {
         background: url('../assets/homeHeaderBox.jpg') no-repeat;
@@ -40,19 +37,15 @@ header {
     }
 } //header styling ends here
 
-//---media queries begin here 
+//media queries begin here 
 
-// @media(max-width: 930px) {
-
-// }
 @media(max-width: 580px) {
     header {
         .homeTitle h1 {
             @include fontSize(125)
         }
     }
-
-} //580 ends here
+} //580px media query styling ends here
 
 @media(max-width: 430px) {
     header {
@@ -68,5 +61,5 @@ header {
             @include fontSize(80)
         }
     }
-} //430 ends here
+} //430px media query styling ends here
 

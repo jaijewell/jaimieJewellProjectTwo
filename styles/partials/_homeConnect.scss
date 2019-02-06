@@ -16,13 +16,10 @@
     }
 
     .connectItem {
-    // display: flex;
-    // justify-content: space-between;
-    position: relative;
+        position: relative;
     }
     
     .icon {
-        // border: 2px solid red;
         width: 35px;
         height: 35px;
         display: flex;
@@ -56,6 +53,7 @@
     .connectText {
         width: 80%;
     }
+
     .connectText h3,
     .connectText p {
         color: $black;
@@ -75,10 +73,10 @@
     .connect .connectItems {
         grid-template-rows: 150px 150px;
     }
-}
+} //desktopSmall media query ends here
 
 @include  tabletLarge {
-     .connect {
+    .connect {
         padding: 0 0 10% 0;
         width: 90%;
         margin: 0 5%;
@@ -95,7 +93,7 @@
                 display: none;
             }
         }
-    }
-}
+    } //.connect media query styling ends here 
+} //tabletLarge media query styling ends here
 
 

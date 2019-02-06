@@ -59,7 +59,7 @@
             margin-top: calc(760px / 2);
         }
     }
-}
+} //1400 media queries styling ends here
 
 @media(max-width: 720px) {
     .plantedArticles {
@@ -100,7 +100,7 @@
                 margin: 2% 5%;
         }
     }
-}
+} //720px media query ends here
 
 @media(max-width: 516px) {
     .plantedArticles {
@@ -112,45 +112,39 @@
             }
         }
     }
-
-
-}
+} //516px media query ends here
 
 @media(max-width: 380px) {
     .plantedArticles {
         .articleOne .articleOneImage,
         .articleTwo .articleTwoImage {
-            
             width: 300px;
-        
         }
         
         .articleOne {
-            
-
             .articleOneImage {
                 margin-right: 5%;
                 box-shadow: 20px 20px $primaryAccent;
             }
         }
+
         .articleTwo {
             .articleTwoImage {
                 margin-left: 5%;
                 box-shadow: -20px 20px $primaryAccent;
             }
         }
-    }
+    } //plantedArticles styling nest ends here
         
     .plantedArticles  {
         .readMore {
             width: 100%;
-        
-
+    
             a {
                 @include fontSize(18);
             }
         }
     }
-}
+} //380px media query styling ends here
 
 

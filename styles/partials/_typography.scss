@@ -11,6 +11,7 @@ h3 {
 h1 {
     @include fontSize(166);
     color: $secondaryColour;
+    
     span {
         color: $primaryAccent;
     }
@@ -27,8 +28,7 @@ h3 {
 p {
     font-family: $secondaryFont;
     line-height:$primaryLineHeight;
-    @include fontSize(20);
-    
+    @include fontSize(20);   
 }
 
 input[type="text"],

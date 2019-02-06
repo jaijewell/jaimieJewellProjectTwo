@@ -50,9 +50,9 @@
         .founderContent {
             margin: 0 5%;
     
-                button {
-                    width: 50%
-                }
+            button {
+                width: 50%
+            }
             
         }
     }
@@ -62,9 +62,9 @@
     .founderContainer {
         height: 80vh;
         margin: 10% 0%;
+        
         .founderContent {
             flex-direction: column;
-            // width: 100%;
             justify-content: center;
 
             .founderText {
@@ -84,9 +84,11 @@
     .founderImage {
         display: none;
     }
+
     .founderContainer {
         height: 50vh;
     }
+
     .founderText {
         height: inherit;
     }
@@ -96,9 +98,8 @@
     .founderContainer {
         height: 60vh;
     }
+    
     .founderText {
         height: inherit;
     }
-
-
 }

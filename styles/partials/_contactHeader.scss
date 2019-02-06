@@ -24,23 +24,17 @@
         align-items: flex-end;
         margin-left: 15%;
             
-        
-
         h1 {
             color: $primaryAccent;
             @include fontSize(80);
             line-height: 92px;
             margin: 0;
-            align-items: center;
-         
-          
+            align-items: center; 
         }
-    }
-   
+    } //contactTitle styling ends here
 } // .contact general styling ends here
 
 // media queries begin
-// @media(max-width: 1186px)
 @include desktopSmall {
     .contact { 
         height: 70vh;
@@ -68,21 +62,19 @@
         justify-content: center;
         align-items: flex-start;
     }
+
      .formContainer {
-        position: static !important;
-        
+        position: static !important; 
     }
   
-} //1186 media query ends here
+} //desktopSmall media query ends here
 
-// @media(max-width: 700px)
 @include tabletLarge {
     .contact .contactTitle h1 {
         @include fontSize(65);
     }
-}
+} //tabletLarge media query ends here
 
-// @media(max-width: 400px)
 @include phone {
     .contact .contactTitle h1 {
         @include fontSize(50);
@@ -93,7 +85,6 @@
             background: none;
         }
     }
-    
-}
+} //phone media query ends here
 
 
