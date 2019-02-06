@@ -12,26 +12,20 @@
     }
 } //media query ends here
 
-@media(max-width: 930px) {
+@include tabletLarge {
     .banner {
         background-position: top left; 
     }
-} //media query ends here
+} // tabletLarge media query ends here
 
-@media(max-width: 635px) {
-    .banner {
-        background-position: 10% 100%; 
-    }
-} //media query ends here
-
-@media(max-width: 600px) {
+@include tabletSmall {
     .banner {
         background-position: 85% 100%; 
     }
-} //media query ends here
+} //tabletSmallmedia query ends here
 
-@media(max-width: 430px) {
+@include phone {
     .banner {
         background-position: top center; 
     }
-} //media query ends here
+} //phone media query ends here

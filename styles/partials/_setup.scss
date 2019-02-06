@@ -17,7 +17,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
   overflow: hidden;
 }
 
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
@@ -26,8 +26,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
   color: black;
 }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0;
 }
-
-
