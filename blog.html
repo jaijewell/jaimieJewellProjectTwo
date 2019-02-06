@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>Blog</title>
+    <!-- favicon -->
+    <link rel="shortcut icon type=" image/png" href="assets/favicon.png">
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Roboto" rel="stylesheet">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="">
@@ -81,16 +86,16 @@
             <div class="blogFormContainer">
                 <form action="" method="POST" class="commentForm" autocomplete="off" name="comments">
                     <fieldset class="topForm">
-                        <label class="visuallyhidden" for="firstName">Name</label>
+                        <label class="visuallyHidden" for="firstName">Name</label>
                         <input type="text" name="firstName" placeholder="Name" id="firstName" maxlength="50">
-                        <label for="email" class="visuallyhidden">Email address</label>
+                        <label for="email" class="visuallyHidden">Email address</label>
                         <input type="email" name="email" id="email" placeholder="Email address" maxlength="50">
                     </fieldset>
                     <div class="message">
-                        <label for="comment">Comments Section</label>
+                        <label for="comment" class="visuallyHidden">Comments Section</label>
                         <textarea id="comment" name="comment" placeholder="Message" cols="30" rows="10" maxlength="1000"></textarea>
                     </div>
-                        <label for="submitComment" class="visuallyhidden">Submit comment</label>
+                        <label for="submitComment" class="visuallyHidden">Submit comment</label>
                         <input type="submit" id="submitComment" value="Post comment">
                 </form>
             </div>

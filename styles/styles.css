@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.visuallyhidden:not(:focus):not(:active) {
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -267,6 +267,9 @@ textarea:focus,
 input[type="submit"]:focus {
   border: 2px solid #f8e71c; }
 
+fieldset {
+  border: none; }
+
 header {
   background: url("../assets/homeHeader.jpg") no-repeat;
   height: 100vh;
@@ -308,12 +311,12 @@ header {
     top: 25%;
     right: 0; }
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   header .homeTitle h1 {
     font-size: 125px;
     font-size: 6.25rem; } }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   header {
     height: 60vh; }
     header .logo h2 {
@@ -1222,7 +1225,7 @@ aside nav a {
     align-items: center; }
   .contact .contactTitle {
     margin: 0;
-    padding-top: 10%;
+    padding-top: 25%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1243,8 +1246,8 @@ aside nav a {
 
 @media (max-width: 480px) {
   .contact .contactTitle h1 {
-    font-size: 50px;
-    font-size: 2.5rem; }
+    font-size: 60px;
+    font-size: 3rem; }
   .contact .topBar {
     background: none; } }
 

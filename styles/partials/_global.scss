@@ -20,7 +20,7 @@ li {
 .topBar,
     a {
         color:$secondaryColour;
-    }
+}
 
 button,
 input[type="submit"] {
@@ -70,4 +70,8 @@ input[type="email"]:focus,
 textarea:focus,
 input[type="submit"]:focus {
     border: 2px solid $primaryAccent;
+}
+
+fieldset {
+    border: none;
 }

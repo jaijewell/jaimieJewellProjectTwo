@@ -38,16 +38,15 @@ header {
 } //header styling ends here
 
 //media queries begin here 
-
-@media(max-width: 580px) {
+@include tabletSmall {
     header {
         .homeTitle h1 {
             @include fontSize(125)
         }
     }
-} //580px media query styling ends here
+} //tabletSmall ends here
 
-@media(max-width: 430px) {
+@include phone {
     header {
         height: 60vh;
         
@@ -61,5 +60,5 @@ header {
             @include fontSize(80)
         }
     }
-} //430px media query styling ends here
+} //phone media query styling ends here
 
